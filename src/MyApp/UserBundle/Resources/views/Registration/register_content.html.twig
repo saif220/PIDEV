@@ -1,0 +1,43 @@
+{% trans_default_domain 'FOSUserBundle' %}
+{% block body %}
+<div class="careplus-banner">
+
+    <!--// Slider \\-->
+    <div class="careplus-banner-one">
+        <div class="careplus-banner-one-layer">
+            <img src="{{ asset('extra-images/banner-1.jpg') }}" alt="">
+            <span class="careplus-transparent"></span>
+            <div class="careplus-banner-caption">
+                <span class="careplus-transparent-shape"></span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="careplus-banner-wrap">
+                                <h1><span>You Can’t</span>Always Be There<span>But We CAn</span></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed entum nulla, eu placerat felis. Etiam tincidunt orci lacus is dolor fermentum sit amet.</p>
+                                <div class="clearfix"></div>
+                                <a href="404.html" class="careplus-banner-btn">Read More <span></span></a>
+                            </div>
+                            <div class="careplus-appointment-form">
+
+
+
+
+
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+    {{ form_widget(form) }}
+
+
+    <div>
+        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+    </div>
+{{ form_end(form) }}
+
+
+
+
+
+                            </div></div></div></div></div></div></div></div>
+
+{% endblock %}

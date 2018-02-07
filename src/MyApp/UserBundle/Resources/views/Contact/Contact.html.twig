@@ -1,0 +1,203 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+<div class="careplus-subheader">
+    <div class="careplus-subheader-image">
+        <span class="careplus-dark-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Contact Us</h1>
+                    <span>Aliquam in elit vel eros tincidunt pulvinar sit amet</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="careplus-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// SubHeader \\-->
+
+<!--// Main Content \\-->
+<div class="careplus-main-content careplus-content-space">
+    <!--// Main Section \\-->
+    <div class="careplus-main-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="careplus-fancy-title">
+                        <h2>Get In Touch</h2>
+                        <span><small></small><i class="icon-tool5"></i></span>
+                    </div>
+                    <div class="carepluss-contact-us-info">
+                        <ul class="row">
+                            <li class="col-md-3">
+                                <div class="carepluss-info">
+                                    <h5>Call Us At</h5>
+                                    <p>(92) 987 65 321 </p>
+                                    <p>+123 45 678</p>
+                                    <span><i class="fa fa-phone"></i></span>
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="carepluss-info">
+                                    <h5>Mail Us At</h5>
+                                    <p><a href="mailto:yourdomain@name.com">info@example.com</a></p>
+                                    <p><a href="mailto:yourdomain@name.com">abc@gmail.com</a></p>
+                                    <span><i class="fa fa-envelope"></i></span>
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="carepluss-info">
+                                    <h5>our Location</h5>
+                                    <p>2925 Swick street,
+                                        lotte, NC 28202
+                                    </p>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="carepluss-info">
+                                    <h5>Fax Us At</h5>
+                                    <p>(92) 987 65 321</p>
+                                    <p>+123 45 678</p>
+                                    <span><i class="fa fa-fax"></i></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// Main Section \\-->
+
+    <!--// Main Section \\-->
+    <div class="careplus-main-section careplus-form-map">
+        <div class="careplus-fancy-title">
+            <h2>Contact Us At</h2><span><small></small><i class="icon-tool5"></i></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="careplus-map-form">
+                        <h4>Send Us Message</h4>
+                        <form method="post" class="myform" action="http://eyecix.com/html/careplus/process-form.php">
+                            <ul>
+                                <li><input value="Enter Your Name" onblur="if(this.value == '') { this.value ='Enter Your Name'; }" onfocus="if(this.value =='Enter Your Name') { this.value = ''; }" tabindex="0" type="text" name="name"></li>
+                                <li><input value="Enter Your Email" onblur="if(this.value == '') { this.value ='Enter Your Email'; }" onfocus="if(this.value =='Enter Your Email') { this.value = ''; }" tabindex="0" type="email" name="email"></li>
+                                <li class="message-box">
+                                    <textarea name="message" placeholder="Enter Message Here" ></textarea>
+                                </li>
+                                <li>
+                                    <label><input type="submit" name="submit" value="Send Now"><span></span></label>
+                                    <span class="output_message"></span>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <!--// Main Section \\-->
+
+</div>
+<!--// Main Content \\-->
+
+<!--// Footer \\-->
+<footer id="careplus-footer" class="careplus-footer-one">
+    <span class="careplus-footer-transparent"></span>
+    <!--// Footer Widget \\-->
+    <div class="careplus-footer-widget">
+        <div class="container">
+            <div class="row">
+                <!--// Widget Contact Info \\-->
+                <aside class="col-md-4 widget widget_contact_info">
+                    <a href="index.html" class="footer-logo"><img src="images/footer-logo.png" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit. Sed et elementum nulla, eu placerat felis. Et mtin orci lacus, id varius.</p>
+                    <ul>
+                        <li>
+                            <h6>Call Us At:</h6>
+                            <span>+123 45 678 - (923) 987 65 432</span>
+                        </li>
+                        <li>
+                            <h6>Mail Us At:</h6>
+                            <a href="mailto:yourdomain@name.com">hello@care.com - info@exam.com</a>
+                        </li>
+                        <li>
+                            <h6>Our Location:</h6>
+                            <span>2925 Swick Hill Street, lotte, NC </span>
+                        </li>
+                    </ul>
+                </aside>
+                <!--// Widget Contact Info \\-->
+
+                <!--// Widget Useful Link \\-->
+                <aside class="col-md-4 widget widget_useful_link">
+                    <h2 class="careplus-footer-title">Useful Links</h2>
+                    <ul>
+                        <li><a href="404.html">Dental</a></li>
+                        <li><a href="404.html">Cardiology</a></li>
+                        <li><a href="404.html">Nuclear Magnetic</a></li>
+                        <li><a href="404.html">Hourly Care</a></li>
+                        <li><a href="404.html">Pregnancy</a></li>
+                        <li><a href="404.html">Respite Care</a></li>
+                        <li><a href="404.html">For Disabled</a></li>
+                        <li><a href="404.html">Insurance Claim</a></li>
+                        <li><a href="404.html">Prostheses</a></li>
+                        <li><a href="404.html">Patient Reports</a></li>
+                        <li><a href="404.html">Traumatology</a></li>
+                        <li><a href="404.html">Appointment</a></li>
+                    </ul>
+                </aside>
+                <!--// Widget Useful Link \\-->
+
+                <!--// Widget Newsletter \\-->
+                <aside class="col-md-4 widget widget_newsletter">
+                    <h2 class="careplus-footer-title">Our Newsletter</h2>
+                    <p>Nunc ut volutpat ex. Morbi risus elit, mattis in mi ne mollis blandit erat.</p>
+                    <form>
+                        <ul>
+                            <li><input value="Your Name" onblur="if(this.value == '') { this.value ='Your Name'; }" onfocus="if(this.value =='Your Name') { this.value = ''; }" tabindex="0" type="text"></li>
+                            <li><input value="Your Email" onblur="if(this.value == '') { this.value ='Your Email'; }" onfocus="if(this.value =='Your Email') { this.value = ''; }" tabindex="0" type="email"></li>
+                            <li><label><input type="submit" value="Subscribe"><span></span></label></li>
+                        </ul>
+                    </form>
+                </aside>
+                <!--// Widget Newsletter \\-->
+
+            </div>
+        </div>
+    </div>
+    <!--// Footer Widget \\-->
+
+    <!--// Copy Right \\-->
+    <div class="careplus-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><i class="fa fa-copyright"></i> 2017, All Right Reserved - by <a href="index-html.html">EyeCix</a></p>
+                    <a href="#" class="careplus-back-top"><i class="fa fa-angle-up"></i></a>
+                    <ul class="careplus-footer-social">
+                        <li><a href="https://www.facebook.com/" class="fa fa-facebook-square"></a></li>
+                        <li><a href="https://twitter.com/login" class="fa fa-twitter-square"></a></li>
+                        <li><a href="https://pk.linkedin.com/" class="fa fa-linkedin-square"></a></li>
+                        <li><a href="https://plus.google.com/" class="fa fa-google-plus-square"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,82 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+
+
+    <div class="careplus-banner">
+
+    <!--// Slider \\-->
+    <div class="careplus-banner-one">
+    <div class="careplus-banner-one-layer">
+    <img src="{{ asset('extra-images/banner-1.jpg') }}" alt="">
+    <span class="careplus-transparent"></span>
+    <div class="careplus-banner-caption">
+    <span class="careplus-transparent-shape"></span>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="careplus-banner-wrap">
+        <h1><span>You Can’t</span>Always Be There<span>But We CAn</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed entum nulla, eu placerat felis. Etiam tincidunt orci lacus is dolor fermentum sit amet.</p>
+        <div class="clearfix"></div>
+        <a href="404.html" class="careplus-banner-btn">Read More <span></span></a>
+    </div>
+    <div class="careplus-appointment-form">
+
+    <form action="{{ path("fos_user_security_check") }}" method="post">
+        {% if csrf_token %}
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+        {% endif %}
+
+
+
+        <label>Book Appointment</label>
+        <p>Lorem ipsum olor sit amet, consetet ur adipiscing elit sed.</p>
+        <ul>
+            <li>
+                <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                <i class="fa fa-user"></i>
+            </li>
+            <li>
+                <input type="password" id="password" name="_password" required="required" />
+
+            </li>
+
+            <li>
+                <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}">
+            </li>
+        </ul>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}
