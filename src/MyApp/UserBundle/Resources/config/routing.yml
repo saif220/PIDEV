@@ -31,3 +31,17 @@ fos_user_change_password:
 Admin:
     path:     /Admin
     defaults: { _controller: MyAppUserBundle:Admin:Index}
+
+Doctor:
+    path:     /Doctor
+    defaults: { _controller: MyAppUserBundle:Default:Doctor}
+Blog:
+    path:     /Blog
+    defaults: { _controller: MyAppUserBundle:Default:Blog}
+Events:
+    path:     /Events
+    defaults: { _controller: MyAppUserBundle:Default:Events}
+Shop:
+    path:     /Shop
+    defaults: { _controller: MyAppUserBundle:Default:Shop}
+
