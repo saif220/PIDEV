@@ -47,6 +47,21 @@ class User extends BaseUser
      */
     protected $lastname;
 
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Please enter your last name.", groups={"Registration", "Profile"})
+     * @Assert\Length(
+     *     min=3,
+     *     max=255,
+     *     minMessage="The last name is too short.",
+     *     maxMessage="The last name is too long.",
+     *     groups={"Registration", "Profile"}
+     * )
+     */
+    protected $role;
+
     /**
      * @return mixed
      */
@@ -93,6 +108,22 @@ class User extends BaseUser
     public function setLastname($lastname)
     {
         $this->lastname = $lastname;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRole()
+    {
+        return $this->role;
+    }
+
+    /**
+     * @param mixed $role
+     */
+    public function setRole($role)
+    {
+        $this->role = $role;
     }
 
 
