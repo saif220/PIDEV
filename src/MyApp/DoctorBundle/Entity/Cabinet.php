@@ -42,6 +42,13 @@ class Cabinet
      */
     private $tel;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="specialite", type="string", length=255)
+     */
+    private $specialite;
+
 
     /**
      * Get id
@@ -124,5 +131,22 @@ class Cabinet
     {
         return $this->tel;
     }
+
+    /**
+     * @return string
+     */
+    public function getSpecialite()
+    {
+        return $this->specialite;
+    }
+
+    /**
+     * @param string $specialite
+     */
+    public function setSpecialite($specialite)
+    {
+        $this->specialite = $specialite;
+    }
+
 }
 

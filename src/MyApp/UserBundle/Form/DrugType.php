@@ -1,33 +1,30 @@
 <?php
 
-namespace MyApp\DoctorBundle\Form;
+namespace MyApp\UserBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class CabinetType extends AbstractType
+class DrugType extends AbstractType
 {
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nomDocteur')
-            ->add('addresse')
-            ->add('tel')
-            ->add('specialite')
-
-            ->add('save', SubmitType::class);
-    }
-    /**
+        $builder->add('nom')
+            ->add('type')
+            ->add('description')
+            ->add('Ajouter', SubmitType::class);
+    }/**
      * {@inheritdoc}
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MyApp\DoctorBundle\Entity\Cabinet'
+            'data_class' => 'MyApp\UserBundle\Entity\Drug'
         ));
     }
 
@@ -36,7 +33,7 @@ class CabinetType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'myapp_doctorbundle_cabinet';
+        return 'myapp_userbundle_drug';
     }
 
 

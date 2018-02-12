@@ -9,3 +9,7 @@ Add_Cabinet:
 listCabinet:
     path:     /listCabinet
     defaults: { _controller: MyAppDoctorBundle:Cabinet:listCabinet}
+
+rechercheCabinet:
+    path:     /rechercheCabinet
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:rechercheCabinet}

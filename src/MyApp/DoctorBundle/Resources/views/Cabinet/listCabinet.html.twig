@@ -3,18 +3,22 @@
 <table border="1">
     <tr>
 
-        <th>Nom Docteur</th>
+        <th>Name</th>
+        <th>Specialité</th>
         <th>Adresse</th>
-        <th>Num tel</th>
+        <th>Phone Number</th>
 
     </tr>
     {% for c in cabinets %}
         <tr>
 
             <td>{{ c.nomDocteur }}</td>
+            <td>{{ c.specialite }}</td>
             <td>{{ c.addresse }}</td>
             <td>{{ c.tel }}</td>
         </tr>
     {% endfor %}
 </table>
 {% endblock %}
+
+

@@ -1,0 +1,24 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+<h2>recherche un Cabinet </h2>
+<form  method="post">
+    Rechercher cabinet par specialite: <input type="text" name="specialite">
+    <button>recherche</button>
+</form>
+
+<h5>Liste des Cabinets </h5>
+<table border="1">
+    <tr>
+        <th>Nom</th>
+        <th>specialite</th>
+        <th>Adresse</th>
+    </tr>
+    {% for cabinet in cabinets %}
+        <tr>
+            <td>{{ cabinet.nomDocteur }}</td>
+            <td>{{ cabinet.specialite }}</td>
+            <td>{{ cabinet.addresse }}</td>
+        </tr>
+    {%endfor%}
+</table>
+{% endblock %}
