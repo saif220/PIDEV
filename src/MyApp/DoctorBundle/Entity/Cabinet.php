@@ -1,6 +1,6 @@
 <?php
 
-namespace MyApp\UserBundle\Entity;
+namespace MyApp\DoctorBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Cabinet
  *
  * @ORM\Table(name="cabinet")
- * @ORM\Entity(repositoryClass="MyApp\UserBundle\Repository\CabinetRepository")
+ * @ORM\Entity(repositoryClass="MyApp\DoctorBundle\Repository\CabinetRepository")
  */
 class Cabinet
 {

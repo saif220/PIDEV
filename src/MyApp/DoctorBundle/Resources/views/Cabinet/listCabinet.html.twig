@@ -1,0 +1,20 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+<table border="1">
+    <tr>
+
+        <th>Nom Docteur</th>
+        <th>Adresse</th>
+        <th>Num tel</th>
+
+    </tr>
+    {% for c in cabinets %}
+        <tr>
+
+            <td>{{ c.nomDocteur }}</td>
+            <td>{{ c.addresse }}</td>
+            <td>{{ c.tel }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

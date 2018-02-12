@@ -1,8 +1,19 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
+
+
+
 <div class="fos_user_user_show">
     <p><h2> Thanks for Visiting</h2></p>
    <br><br><br><br>
-    <a href="{{ path ('fos_user_profile_edit') }}" class="careplus-booking-btn careplus-bgcolor-two">Edit Profile</a>
-    <a href="{{ path ('fos_user_change_password') }}" class="careplus-booking-btn careplus-bgcolor-two">Change Password</a>
+
+   {% if app.user.getrole()=="Doctor"  %}
+       <a href="{{ path ('Add_Cabinet') }}" class="careplus-booking-btn careplus-bgcolor-two">Add Cabinet</a>
+       <a href="{{ path ('fos_user_profile_edit') }}" class="careplus-booking-btn careplus-bgcolor-two">Edit Profile</a>
+       <a href="{{ path ('fos_user_change_password') }}" class="careplus-booking-btn careplus-bgcolor-two">Change Password</a>
+    {% else %}
+
+       <a href="{{ path ('fos_user_profile_edit') }}" class="careplus-booking-btn careplus-bgcolor-two">Edit Profile</a>
+       <a href="{{ path ('fos_user_change_password') }}" class="careplus-booking-btn careplus-bgcolor-two">Change Password</a>
+    {% endif %}
 </div>

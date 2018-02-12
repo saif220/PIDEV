@@ -1,3 +1,7 @@
+my_app_doctor:
+    resource: "@MyAppDoctorBundle/Resources/config/routing.yml"
+    prefix:   /doc
+
 my_app_user:
     resource: "@MyAppUserBundle/Resources/config/routing.yml"
     prefix:   /main

@@ -1,0 +1,11 @@
+my_app_doctor_homepage:
+    path:     /
+    defaults: { _controller: MyAppDoctorBundle:Default:index }
+
+Add_Cabinet:
+    path:     /addcabinet
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:add}
+
+listCabinet:
+    path:     /listCabinet
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:listCabinet}
