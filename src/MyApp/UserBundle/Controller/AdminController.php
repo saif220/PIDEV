@@ -38,7 +38,7 @@ class AdminController extends Controller
             $em->flush();
             return $this->redirect($this->generateUrl('Admin'));
         }
-        if($this->container->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')){
+        if(!$this->container->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')){
             return new RedirectResponse($this->get('router')->generate('my_app_user_homepage'));
 
         }
