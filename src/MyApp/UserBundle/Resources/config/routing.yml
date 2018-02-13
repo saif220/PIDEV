@@ -48,3 +48,11 @@ Shop:
 AddDrug:
     path:     /addDrug
     defaults: { _controller: MyAppUserBundle:Admin:add}
+
+listDrug:
+    path:     /listdrug
+    defaults: { _controller: MyAppUserBundle:Admin:listDrug}
+
+rechercheDrug:
+    path:     /recherchedrug
+    defaults: { _controller: MyAppUserBundle:Admin:rechercheDrug}

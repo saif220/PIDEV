@@ -44,4 +44,29 @@ class AdminController extends Controller
         }
         return $this->render('MyAppUserBundle:Admin:add.html.twig', array('form' => $form->createView()));
     }
+
+
+
+    public function listDrugAction(){
+        //instantier l'entity manager
+        $em = $this->getDoctrine()->getManager();
+        $drugs = $em->getRepository('MyAppUserBundle:Drug')->findAll(); // recuperer les modeles de la BD
+        //die("aa");
+        return $this->render('MyAppUserBundle:Drug:listDrug.html.twig', array('drugs' => $drugs));
+    }
+
+
+    public function rechercheDrugAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $drugs = $em->getRepository("MyAppUserBundle:Drug")->findAll();
+        if($request->isMethod("post"))
+        {
+            $critere = $request->get('nom');
+            $drugs = $em->getRepository("MyAppUserBundle:Drug")->findBy(array('nom' => $critere));
+        }
+        return $this->render('MyAppUserBundle:Drug:rechercheDrug.html.twig',array('drugs' => $drugs));
+    }
+
+
 }

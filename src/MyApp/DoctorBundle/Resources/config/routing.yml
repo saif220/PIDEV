@@ -13,3 +13,7 @@ listCabinet:
 rechercheCabinet:
     path:     /rechercheCabinet
     defaults: { _controller: MyAppDoctorBundle:Cabinet:rechercheCabinet}
+
+map:
+    path:     /map
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:map }

@@ -80,8 +80,23 @@
                                     <li class="active"><a href="{{ path ('homepage') }}">Home</a></li>
                                     <li><a href="{{ path ('Doctor') }}">Doctor & Pharmacy</a>
                                         <ul class="careplus-dropdown-menu">
-                                            <li><a href="{{ path ('rechercheCabinet') }}">Rechercher Un Cabinet</a></li>
-                                            <li><a href="appointment-form.html">Rechercher un Médicament</a></li>
+                                            <li><a href="#">Doctor</a>
+                                                <ul class="careplus-dropdown-menu">
+                                                    <li><a href="{{ path('listCabinet') }}">List Cabinet</a></li>
+                                                    <li><a href="{{ path('rechercheCabinet') }}">Search Cabinet</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Drugs</a>
+                                                <ul class="careplus-dropdown-menu">
+                                                    <li><a href="{{ path('listDrug') }}">List Drugs</a></li>
+                                                    <li><a href="{{ path('rechercheDrug') }}">Search Drug</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li><a href="{{ path('map') }}">Nearby Hospitals</a>
+
+                                            </li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ path ('Blog') }}">Blogs</a>

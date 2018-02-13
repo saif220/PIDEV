@@ -1,10 +1,27 @@
 {% extends 'MyAppUserBundle::layout.html.twig' %}
 {% block body %}
-<h2>recherche un Cabinet </h2>
-<form  method="post">
-    Rechercher cabinet par specialite: <input type="text" name="specialite">
-    <button>recherche</button>
-</form>
+
+
+    <div class="careplus-search-result-text">
+        <h3>Search Cabinet</h3>
+        <p>Please put a speciality name</p>
+        <form method="post">
+            <input type="text" name="specialite">
+            <label> <input type="submit" value="Search Now"> <span></span></label>
+        </form>
+        <i class="fa fa-search"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 <h5>Liste des Cabinets </h5>
 <table border="1">

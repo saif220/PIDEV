@@ -18,7 +18,10 @@ class CabinetController extends Controller
 {
 
     public function addAction(Request $request){
-
+         $user=$this->getUser();
+         if ($user->getRole()==null){
+             die('impossible de joindre la page');
+         }else{
         $cabinet = new Cabinet();
         $form = $this->createForm(CabinetType::class, $cabinet);
         $form->handleRequest($request);
@@ -30,7 +33,7 @@ class CabinetController extends Controller
             return $this->redirect($this->generateUrl('listCabinet'));
         }
         return $this->render('MyAppDoctorBundle:Cabinet:addCabinet.html.twig', array('form' => $form->createView()));
-    }
+    }}
 
 
 
@@ -53,6 +56,12 @@ class CabinetController extends Controller
             $cabinets = $em->getRepository("MyAppDoctorBundle:Cabinet")->findBy(array('specialite' => $critere));
         }
         return $this->render('MyAppDoctorBundle:Cabinet:rechercheCabinet.html.twig',array('cabinets' => $cabinets));
+    }
+
+    public function mapAction()
+    {
+        $name='name';
+        return $this->render('MyAppDoctorBundle:Cabinet:map.html.twig', array('name'=>$name));
     }
 
 
