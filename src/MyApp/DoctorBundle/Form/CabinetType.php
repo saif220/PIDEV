@@ -16,10 +16,9 @@ class CabinetType extends AbstractType
     {
         $builder->add('nomDocteur')
             ->add('addresse')
-            ->add('tel')
             ->add('specialite')
-
-            ->add('save', SubmitType::class);
+            ->add('tel')
+            ;
     }
     /**
      * {@inheritdoc}

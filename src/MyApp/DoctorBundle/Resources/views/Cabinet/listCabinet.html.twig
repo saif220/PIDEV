@@ -1,24 +1,34 @@
 {% extends 'MyAppUserBundle::layout.html.twig' %}
 {% block body %}
-<table border="1">
-    <tr>
+<div class="careplus-main-content">
+<div class="careplus-main-section">
+    <div class="container">
+        <div class="row">
+<div class="col-md-12">
+    <div class="careplus-appointment-bord">
+        <ul class="schedule-days">
+            <li><span>ID</span></li>
+            <li>Name</li>
+            <li>Specialite</li>
+            <li>Address</li>
+            <li>Phone Number</li>
+        </ul>
+        {% for c in cabinets %}
+            <ul>
+<li>{{ c.id}}</li>
+                <li>{{ c.nomDocteur }}</li>
+                <li>{{ c.specialite }}</li>
+                <li>{{ c.addresse }}</li>
+                <li>{{ c.tel }}</li>
+            </ul>
+        {% endfor %}
 
-        <th>Name</th>
-        <th>Specialité</th>
-        <th>Adresse</th>
-        <th>Phone Number</th>
+    </div></div></div></div></div></div>
 
-    </tr>
-    {% for c in cabinets %}
-        <tr>
 
-            <td>{{ c.nomDocteur }}</td>
-            <td>{{ c.specialite }}</td>
-            <td>{{ c.addresse }}</td>
-            <td>{{ c.tel }}</td>
-        </tr>
-    {% endfor %}
-</table>
+
+
+
 {% endblock %}
 
 

@@ -11,23 +11,34 @@
     </div>
 
 
+    <div class="col-md-12">
+        <div class="careplus-appointment-bord">
+            <ul class="schedule-days">
+                <li><span>ID</span></li>
+                <li>Name</li>
+                <li>Type</li>
+                <li>Description</li>
+
+            </ul>
+            {% for drug in drugs %}
+                <ul>
+                    <li>{{ drug.id}}</li>
+                    <li>{{ drug.nom }}</li>
+                    <li>{{ drug.type }}</li>
+                    <li>{{ drug.description }}</li>
+
+                </ul>
+            {% endfor %}
+
+        </div></div></div></div></div></div>
 
 
 
 
-<h5>Liste des Drugs </h5>
-<table border="1">
-    <tr>
-        <th>name</th>
-        <th>Type</th>
-        <th>Descriptions</th>
-    </tr>
-    {% for drug in drugs %}
-        <tr>
-            <td>{{ drug.nom }}</td>
-            <td>{{ drug.type }}</td>
-            <td>{{ drug.description }}</td>
-        </tr>
-    {%endfor%}
-</table>
+
+
+
+
+
+
 {% endblock %}

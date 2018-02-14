@@ -1,9 +1,57 @@
 {% extends 'MyAppUserBundle::layout.html.twig' %}
 {% block body %}
-<h3>Formulaire d'ajout</h3>
+
+    <div class="careplus-subheader">
+        <div class="careplus-subheader-image">
+            <span class="careplus-dark-transparent"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>ADD You Cabinet</h1>
+                        <span>Aliquam in elit vel eros tincidunt pulvinar sit amet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="careplus-main-content">
+
+
     <div class="col-md-12">
-    <div class="careplus-appointment-request-form">
-{{ form(form) }}
-{{ form_errors(form) }}
-    </div></div>
+        <div class="careplus-appointment-request-form">
+            {{ form_start(form) }}
+                <ul>
+                    <li class="careplus-appointment-fullform"> <span>Nom Docteur</span> </li>
+                    <li>
+{{ form_widget(form.nomDocteur) }}                    </li>
+
+
+                    <li class="careplus-appointment-fullform"> <span>Specialite:</span> </li>
+                    <li >
+
+                        {{ form_widget(form.specialite) }}                            </li>
+                    <li class="careplus-appointment-fullform"> <span>Phone Number</span> </li>
+                    <li>
+                        {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}                            </li>
+                    <li class="careplus-appointment-fullform"> <span>Address</span> </li>
+                    <li class="careplus-appointment-fullform">
+                        {{ form_widget(form.addresse) }}                            </li>
+{{ form_end(form) }}
+                    <li class="careplus-appointment-fullform"> <li><label><input value="Submit Now" type="submit"><span></span></label></li>                </ul>
+            <span></span></div>
+       </div>
+
+
+
+
+
+
+
+    </div>
+
+
 {% endblock %}
