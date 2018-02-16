@@ -17,3 +17,24 @@ rechercheCabinet:
 map:
     path:     /map
     defaults: { _controller: MyAppDoctorBundle:Cabinet:map }
+
+findCabinet:
+    path:     /mycabinet
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:MyCabinet}
+
+Cabinet:
+    path:     /cabinet/{spec}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Cabinet}
+
+reservation:
+    path:     /reservation
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:reservation}
+
+
+reservation1:
+    path:     /reservation1
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation1}
+
+updaterdv:
+    path:     /updaterdv
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:updaterdv}

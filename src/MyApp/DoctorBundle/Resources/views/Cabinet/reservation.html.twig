@@ -1,0 +1,254 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+
+
+<div class="careplus-subheader">
+    <div class="careplus-subheader-image">
+        <span class="careplus-dark-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Appointment</h1>
+                    <span>Aliquam in elit vel eros tincidunt pulvinar sit amet</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="careplus-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li>Appointment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// SubHeader \\-->
+
+<!--// Main Content \\-->
+<div class="careplus-main-content">
+
+    <!--// Main Section \\-->
+    <div class="careplus-main-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="careplus-appointment-bord">
+                        <ul class="schedule-days">
+                            <li><span>TIME</span></li>
+                            <li>Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                            <li>saturday</li>
+                        </ul>
+                        <ul>
+                            <li><time datetime="2008-02-14 20:00">09:00 <small>-</small> 10:00</time></li>
+                            <li>
+
+                                <div class="careplus-doctor">
+                                    <h6>Dental</h6>
+                                    <span>Dr. Ryan Haris</span>
+                                    <a href="{{ path('reservation1') }}" class="available-btn">Available</a>
+                                </div>
+
+                            </li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Pediatric</h6>
+                                    <span>Dr. Sam Jordan</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Pulmonary</h6>
+                                    <span>Dr. John Rickey</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><time datetime="2008-02-14 20:00">10:00 <small>-</small> 11:00</time></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Cardiology</h6>
+                                    <span>Dr. Stuart Binny</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Dental</h6>
+                                    <span>Dr. Ryan Haris</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li><time datetime="2008-02-14 20:00">11:00 <small>-</small> 12:00</time></li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Pulmonary</h6>
+                                    <span>Dr. John Ricky</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Cardiology</h6>
+                                    <span>Dr. Stuart Binny</span>
+                                    <a href="404.html" class="available-btn booked">Booked</a>
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Traumatology</h6>
+                                    <span>Dr. Sarena William</span>
+                                    <a href="404.html" class="available-btn booked">Booked</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><time datetime="2008-02-14 20:00">12:00 <small>-</small> 13:00</time></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Cardiology</h6>
+                                    <span>Dr. Stuart Binny</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><time datetime="2008-02-14 20:00">13:00 <small>-</small> 14:00</time></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Neorology</h6>
+                                    <span>Dr. Darren Sam</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Dental</h6>
+                                    <span>Dr. Ryan Haris</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Pediatric</h6>
+                                    <span>Dr. Sam Jordan</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><time datetime="2008-02-14 20:00">15:00 <small>-</small> 16:00</time></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li><time datetime="2008-02-14 20:00">17:00 <small>-</small> 18:00</time></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Traumatology</h6>
+                                    <span>Dr. Sarena William</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Neorology</h6>
+                                    <span>Dr. Darren Sam</span>
+                                    <a href="404.html" class="available-btn booked">Booked</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="border-none">
+                            <li><time datetime="2008-02-14 20:00">19:00 <small>-</small> 20:00</time></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+                                    <h6>Pulmonary</h6>
+                                    <span>Dr. John Rickey</span>
+                                    <a href="404.html" class="available-btn">Available</a>
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--// Main Section \\-->
+
+    <!--// Main Section \\-->
+    <div class="careplus-main-section careplus-partner-full">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="careplus-fancy-title">
+                        <h2>Our Partners</h2>
+                        <span><small></small><i class="icon-tool5"></i></span>
+                    </div>
+                    <div class="careplus-partners">
+                        <ul>
+                            <li>
+                                <figure><a href="404.html"><img src="extra-images/partner-img1.png" alt=""></a> <span>Happy Client</span></figure>
+                            </li>
+                            <li>
+                                <figure><a href="404.html"><img src="extra-images/partner-img2.png" alt=""></a> <span>Happy Client</span></figure>
+                            </li>
+                            <li>
+                                <figure><a href="404.html"><img src="extra-images/partner-img3.png" alt=""></a> <span>Happy Client</span></figure>
+                            </li>
+                            <li>
+                                <figure><a href="404.html"><img src="extra-images/partner-img4.png" alt=""></a> <span>Happy Client</span></figure>
+                            </li>
+                            <li>
+                                <figure><a href="404.html"><img src="extra-images/partner-img3.png" alt=""></a> <span>Happy Client</span></figure>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// Main Section \\-->
+
+</div>
+{% endblock %}

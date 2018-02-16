@@ -62,10 +62,7 @@ class User extends BaseUser
      */
     protected $role;
 
-    /**
-     * @ORM\OneToOne(targetEntity="MyApp\DoctorBundle\Entity\Cabinet", cascade={"persist"})
-     */
-    protected $cabinet;
+
 
     /**
      * @return mixed
@@ -131,21 +128,7 @@ class User extends BaseUser
         $this->role = $role;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getCabinet()
-    {
-        return $this->cabinet;
-    }
 
-    /**
-     * @param mixed $cabinet
-     */
-    public function setCabinet($cabinet)
-    {
-        $this->cabinet = $cabinet;
-    }
 
 
 

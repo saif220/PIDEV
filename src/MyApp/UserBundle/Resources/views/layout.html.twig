@@ -99,6 +99,17 @@
                                             </li>
                                         </ul>
                                     </li>
+                                    <li><a href="{{ path ('Doctor') }}">Diet</a>
+                                        <ul class="careplus-dropdown-menu">
+                                            <li><a href="#">Diet 1</a>
+
+                                            </li>
+                                            <li><a href="#">Diet 2</a>
+
+                                            </li>
+
+                                        </ul>
+                                    </li>
                                     <li><a href="{{ path ('Blog') }}">Blogs</a>
 
                                     </li>
@@ -256,6 +267,8 @@
     </div>
 </div>
 {% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('script/jquery-3.2.1.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('script/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('script/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('script/slick.slider.min.js') }}"></script>
@@ -265,6 +278,7 @@
     <script type="text/javascript" src="{{ asset('script/progressbar.js') }}"></script>
     <script type="text/javascript" src="{{ asset('script/counter.js') }}"></script>
     <script type="text/javascript" src="{{ asset('script/functions.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('script/main.js') }}"></script>
 {% endblock %}
 
 </body>

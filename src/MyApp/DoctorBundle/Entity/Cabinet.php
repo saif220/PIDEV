@@ -49,6 +49,11 @@ class Cabinet
      */
     private $specialite;
 
+    /**
+     * @ORM\OneToOne(targetEntity="MyApp\UserBundle\Entity\User", cascade={"persist"})
+     */
+    protected $user;
+
 
     /**
      * Get id
@@ -147,6 +152,24 @@ class Cabinet
     {
         $this->specialite = $specialite;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+
 
 }
 
