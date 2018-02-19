@@ -41,173 +41,386 @@
                     <div class="careplus-appointment-bord">
                         <ul class="schedule-days">
                             <li><span>TIME</span></li>
-                            <li>Monday</li>
+                            <li>Monday </li>
                             <li>Tuesday</li>
                             <li>Wednesday</li>
                             <li>Thursday</li>
                             <li>Friday</li>
-                            <li>saturday</li>
+
                         </ul>
                         <ul>
                             <li><time datetime="2008-02-14 20:00">09:00 <small>-</small> 10:00</time></li>
                             <li>
 
                                 <div class="careplus-doctor">
-                                    <h6>Dental</h6>
-                                    <span>Dr. Ryan Haris</span>
-                                    <a href="{{ path('reservation1') }}" class="available-btn">Available</a>
+
+                                    {% if rdvs %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                    <a href="#" class="available-btn booked">Booked</a>
+                                        {% else %}
+                                            <h6>Booking Now !</h6>
+                                            <span>Dr.{{ userd }} </span>
+                                     <a href="{{ path('reservation1', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                        {% endif %}
                                 </div>
 
                             </li>
-                            <li></li>
+                            <li>
+
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsTu9 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation2', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+
+                            </li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Pediatric</h6>
-                                    <span>Dr. Sam Jordan</span>
-                                    <a href="404.html" class="available-btn">Available</a>
+
+                                    {% if rdvsWe9 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation3', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
-                            <li></li>
-                            <li></li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Pulmonary</h6>
-                                    <span>Dr. John Rickey</span>
-                                    <a href="404.html" class="available-btn">Available</a>
+
+                                    {% if rdvsTh9 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation4', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsFr9 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation5', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+
                         </ul>
                         <ul>
                             <li><time datetime="2008-02-14 20:00">10:00 <small>-</small> 11:00</time></li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Cardiology</h6>
-                                    <span>Dr. Stuart Binny</span>
-                                    <a href="404.html" class="available-btn">Available</a>
+
+                                    {% if rdvsMo10 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation6', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><div class="careplus-doctor">
+
+                                    {% if rdvsTu10 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation7', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div></li>
+                            <li><div class="careplus-doctor">
+
+                                    {% if rdvsWe10 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation8', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Dental</h6>
-                                    <span>Dr. Ryan Haris</span>
-                                    <a href="404.html" class="available-btn">Available</a>
+
+                                    {% if rdvsTh10 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation9', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
-                            <li></li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsFr10 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation10', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+
                         </ul>
                         <ul>
                             <li><time datetime="2008-02-14 20:00">11:00 <small>-</small> 12:00</time></li>
-                            <li></li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Pulmonary</h6>
-                                    <span>Dr. John Ricky</span>
-                                    <a href="404.html" class="available-btn">Available</a>
+
+                                    {% if rdvsMo11 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation11', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Cardiology</h6>
-                                    <span>Dr. Stuart Binny</span>
-                                    <a href="404.html" class="available-btn booked">Booked</a>
+
+                                    {% if rdvsTu11 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation12', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
-                            <li></li>
-                            <li></li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Traumatology</h6>
-                                    <span>Dr. Sarena William</span>
-                                    <a href="404.html" class="available-btn booked">Booked</a>
+
+                                    {% if rdvsWe11 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation13', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsTh11 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation14', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsFr11 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation15', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+
                         </ul>
                         <ul>
-                            <li><time datetime="2008-02-14 20:00">12:00 <small>-</small> 13:00</time></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><time datetime="2008-02-14 20:00">14:00 <small>-</small> 15:00</time></li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Cardiology</h6>
-                                    <span>Dr. Stuart Binny</span>
-                                    <a href="404.html" class="available-btn">Available</a>
+
+                                    {% if rdvsMo14 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation16', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsTu14 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation17', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsWe14 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation18', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsTh14 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation19', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsFr14 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation20', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
                         </ul>
-                        <ul>
-                            <li><time datetime="2008-02-14 20:00">13:00 <small>-</small> 14:00</time></li>
-                            <li>
-                                <div class="careplus-doctor">
-                                    <h6>Neorology</h6>
-                                    <span>Dr. Darren Sam</span>
-                                    <a href="404.html" class="available-btn">Available</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="careplus-doctor">
-                                    <h6>Dental</h6>
-                                    <span>Dr. Ryan Haris</span>
-                                    <a href="404.html" class="available-btn">Available</a>
-                                </div>
-                            </li>
-                            <li></li>
-                            <li></li>
-                            <li>
-                                <div class="careplus-doctor">
-                                    <h6>Pediatric</h6>
-                                    <span>Dr. Sam Jordan</span>
-                                    <a href="404.html" class="available-btn">Available</a>
-                                </div>
-                            </li>
-                        </ul>
+
+
                         <ul>
                             <li><time datetime="2008-02-14 20:00">15:00 <small>-</small> 16:00</time></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <ul>
-                            <li><time datetime="2008-02-14 20:00">17:00 <small>-</small> 18:00</time></li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Traumatology</h6>
-                                    <span>Dr. Sarena William</span>
-                                    <a href="404.html" class="available-btn">Available</a>
+
+                                    {% if rdvsMo15 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation21', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
                             <li>
                                 <div class="careplus-doctor">
-                                    <h6>Neorology</h6>
-                                    <span>Dr. Darren Sam</span>
-                                    <a href="404.html" class="available-btn booked">Booked</a>
+
+                                    {% if rdvsTu15 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation22', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsWe15 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation23', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsTh15 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation24', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="careplus-doctor">
+
+                                    {% if rdvsFr15 %}
+                                        <h6>Sorry !</h6>
+                                        <span>Already Taken ! </span>
+                                        <a href="#" class="available-btn booked">Booked</a>
+                                    {% else %}
+                                        <h6>Booking Now !</h6>
+                                        <span>Dr.{{ userd }} </span>
+                                        <a href="{{ path('reservation25', {'userd':userd}) }}" class="available-btn ">Available</a>
+                                    {% endif %}
                                 </div>
                             </li>
                         </ul>
-                        <ul class="border-none">
-                            <li><time datetime="2008-02-14 20:00">19:00 <small>-</small> 20:00</time></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>
-                                <div class="careplus-doctor">
-                                    <h6>Pulmonary</h6>
-                                    <span>Dr. John Rickey</span>
-                                    <a href="404.html" class="available-btn">Available</a>
-                                </div>
-                            </li>
-                            <li></li>
-                        </ul>
+
+
                     </div>
                 </div>
 

@@ -36,6 +36,8 @@
             <li>Specialite</li>
             <li>Address</li>
             <li>Phone Number</li>
+            <li>Book Appointment</li>
+            <li>aaaa</li>
         </ul>
         {% for c in cabinets %}
             <ul>
@@ -44,6 +46,8 @@
                 <li>{{ c.specialite }}</li>
                 <li>{{ c.addresse }}</li>
                 <li>{{ c.tel }}</li>
+                <li>{{ c.user.getId() }}</li>
+                <li><a href="{{ path ('reservation', {'userd':c.user}) }}">Book</a></li>
             </ul>
         {% endfor %}
 

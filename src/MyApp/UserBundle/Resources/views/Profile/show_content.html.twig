@@ -8,6 +8,7 @@
    <br><br><br><br>
 
    {% if app.user.getrole()=="Doctor"  %}
+       <a href="{{ path ('findRdv') }}" class="careplus-booking-btn careplus-bgcolor-two">My Reservations</a>
        <a href="{{ path ('Add_Cabinet') }}" class="careplus-booking-btn careplus-bgcolor-two">Add Cabinet</a>
        <a href="{{ path ('fos_user_profile_edit') }}" class="careplus-booking-btn careplus-bgcolor-two">Edit Profile</a>
        <a href="{{ path ('fos_user_change_password') }}" class="careplus-booking-btn careplus-bgcolor-two">Change Password</a>

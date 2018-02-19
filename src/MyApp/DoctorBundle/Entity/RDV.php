@@ -61,6 +61,19 @@ private $description;
      */
 private $num_tel;
 
+
+
+
+    /**
+     * @var string
+     * @ORM\Column(name="doctorname", type="string", length=255)
+     */
+    private $doctorname;
+
+
+
+
+
     /**
      * @return int
      */
@@ -156,6 +169,25 @@ private $num_tel;
     {
         $this->num_tel = $num_tel;
     }
+
+    /**
+     * @return string
+     */
+    public function getDoctorname()
+    {
+        return $this->doctorname;
+    }
+
+    /**
+     * @param string $doctorname
+     */
+    public function setDoctorname($doctorname)
+    {
+        $this->doctorname = $doctorname;
+    }
+
+
+
 
 
 

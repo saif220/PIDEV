@@ -26,14 +26,113 @@ Cabinet:
     path:     /cabinet/{spec}
     defaults: { _controller: MyAppDoctorBundle:Cabinet:Cabinet}
 
+findRdv:
+    path:     /myreservation
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:MyReservation}
+
 reservation:
-    path:     /reservation
+    path:     /reservation/{userd}
     defaults: { _controller: MyAppDoctorBundle:Cabinet:reservation}
 
 
 reservation1:
-    path:     /reservation1
+    path:     /reservation1/{userd}
     defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation1}
+
+reservation2:
+    path:     /reservation2/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation2}
+
+reservation3:
+    path:     /reservation3/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation3}
+
+reservation4:
+    path:     /reservation4/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation4}
+
+reservation5:
+    path:     /reservation5/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation5}
+
+reservation6:
+    path:     /reservation6/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation6}
+
+reservation7:
+    path:     /reservation7/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation7}
+
+reservation8:
+    path:     /reservation8/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation8}
+reservation9:
+    path:     /reservation9/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation9}
+
+reservation10:
+    path:     /reservation10/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation10}
+
+reservation11:
+    path:     /reservation11/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation11}
+
+reservation12:
+    path:     /reservation12/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation12}
+
+reservation13:
+    path:     /reservation13/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation13}
+
+reservation14:
+    path:     /reservation14/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation14}
+
+reservation15:
+    path:     /reservation15/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation15}
+
+reservation16:
+    path:     /reservation16/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation16}
+
+reservation17:
+    path:     /reservation17/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation17}
+
+reservation18:
+    path:     /reservation18/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation18}
+
+reservation19:
+    path:     /reservation19/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation19}
+
+reservation20:
+    path:     /reservation20/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation20}
+
+reservation21:
+    path:     /reservation21/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation21}
+
+reservation22:
+    path:     /reservation22/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation22}
+
+reservation23:
+    path:     /reservation23/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation23}
+
+reservation24:
+    path:     /reservation24/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation24}
+
+reservation25:
+    path:     /reservation25/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:Reservation25}
 
 updaterdv:
     path:     /updaterdv

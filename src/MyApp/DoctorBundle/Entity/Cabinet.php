@@ -55,6 +55,8 @@ class Cabinet
     protected $user;
 
 
+
+
     /**
      * Get id
      *
@@ -168,6 +170,8 @@ class Cabinet
     {
         $this->user = $user;
     }
+
+
 
 
 

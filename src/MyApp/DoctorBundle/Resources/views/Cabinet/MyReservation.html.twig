@@ -1,0 +1,30 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+    <div class="careplus-main-content">
+        <div class="careplus-main-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="careplus-appointment-bord">
+                            <ul class="schedule-days">
+                                <li><span>ID</span></li>
+                                <li>Name Patient</li>
+                                <li>Description</li>
+                                <li>Day</li>
+                                <li>Hour</li>
+                                <li>Phone Number</li>
+                            </ul>
+                            {% for c in rdv %}
+                                <ul>
+                                    <li>{{ c.id}}</li>
+                                    <li>{{ c.nompatient }}</li>
+                                    <li>{{ c.description }}</li>
+                                    <li>{{ c.day }}</li>
+                                    <li>{{ c.hour }}</li>
+                                    <li>{{ c.numtel }}</li>
+                                </ul>
+                            {% endfor %}
+
+                        </div></div></div></div></div></div>
+
+{% endblock %}
