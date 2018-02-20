@@ -1,6 +1,15 @@
 {% extends 'MyAppUserBundle::layout.html.twig' %}
 {% block body %}
-
+<style>
+    .parent{
+        height: 207px;
+        width: 200px;
+    }
+    .parent img{
+        height: 100%;
+        width: 100%;
+    }
+</style>
 <div class="careplus-subheader">
     <div class="careplus-subheader-image">
         <span class="careplus-dark-transparent"></span>
@@ -24,39 +33,36 @@
 
 
 
-<div class="careplus-main-content">
+
+
+
+
+
+
+
 <div class="careplus-main-section">
     <div class="container">
         <div class="row">
-<div class="col-md-12">
-    <div class="careplus-appointment-bord">
-        <ul class="schedule-days">
-            <li><span>ID</span></li>
-            <li>Name</li>
-            <li>Specialite</li>
-            <li>Address</li>
-            <li>Phone Number</li>
-            <li>Book Appointment</li>
-            <li>aaaa</li>
-        </ul>
-        {% for c in cabinets %}
-            <ul>
-<li>{{ c.id}}</li>
-                <li>{{ c.nomDocteur }}</li>
-                <li>{{ c.specialite }}</li>
-                <li>{{ c.addresse }}</li>
-                <li>{{ c.tel }}</li>
-                <li>{{ c.user.getId() }}</li>
-                <li><a href="{{ path ('reservation', {'userd':c.user}) }}">Book</a></li>
-            </ul>
-        {% endfor %}
 
-    </div></div></div></div></div></div>
-
-</div>
+            <div class="col-md-9">
+                <div class="careplus-department careplus-department-list">
+                    <ul class="row">
+                        {% for c in cabinets %}
+                        <li class="col-md-12">
 
 
 
+                            <figure><a href="department-detail.html" class="parent"><img src="{{ asset(vich_uploader_asset(c, 'devisFile')) }}" alt="" style="size: inherit">
+                                    <span><i class="fa fa-link"></i><small></small></span></a><span></span></figure>
+                            <div class="careplus-department-list-text">
+                                <h5><a href="department-detail.html">{{ c.specialite }}</a></h5>
+                                <span>{{ c.nomDocteur }}</span>
+                                <p>{{ c.addresse }}</p>
+                                <a href="{{ path ('reservation', {'userd':c.user}) }}" class="careplus-readmore-btn">Book<span></span></a>
+                                <i class="icon-eye3"></i>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div></div></div></div></div></div>
 {% endblock %}
-
-

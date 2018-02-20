@@ -58,7 +58,10 @@ class CabinetController extends Controller
         if($request->isMethod("post"))
         {
             $critere = $request->get('specialite');
-            $cabinets = $em->getRepository("MyAppDoctorBundle:Cabinet")->findBy(array('specialite' => $critere));
+            $query = $em->createQuery(
+                'SELECT v From MyAppDoctorBundle:Cabinet v  
+                                          WHERE v.specialite = :critere OR v.nomDocteur = :critere')->setParameter('critere',$critere);
+            $cabinets = $query->getResult();
         }
         return $this->render('MyAppDoctorBundle:Cabinet:rechercheCabinet.html.twig',array('cabinets' => $cabinets));
     }
@@ -130,6 +133,32 @@ class CabinetController extends Controller
         return $this->render('MyAppDoctorBundle:Cabinet:MyReservation.html.twig',array("rdv"=>$rdv));
 
 
+
+    }
+
+
+
+    public function quizAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $quizs = $em->getRepository("MyAppDoctorBundle:Quiz")->findAll();
+        if($request->isMethod("post"))
+        {
+            $age = $request->get('age');
+            $sexe = $request->get('sexe');
+            $douleur = $request->get('douleur');
+
+            $query = $em->createQuery(
+                "SELECT v.type From MyAppDoctorBundle:Quiz v  
+                                          WHERE v.age = :age AND v.sexe = :sexe AND v.douleur= :douleur")->setParameter('age',$age)
+                                                                                                        ->setParameter('sexe',$sexe)
+                                                                                                        ->setParameter('douleur',$douleur);
+            $quizs2 = $query->getResult();
+            return $this->render('MyAppDoctorBundle:Cabinet:quiz.html.twig',array('quizs2' => $quizs2));
+        }else{
+
+            return $this->render('MyAppDoctorBundle:Cabinet:quiz.html.twig',array('quizs' => $quizs));
+        }
 
     }
 

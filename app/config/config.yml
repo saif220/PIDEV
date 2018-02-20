@@ -9,6 +9,7 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
+    app.path.product_images: /uploads/images/products
 
 framework:
     #esi: ~
@@ -81,3 +82,11 @@ fos_user:
     registration:
         form:
             type: MyApp\UserBundle\Form\RegistrationType
+
+vich_uploader:
+    db_driver: orm
+    mappings:
+        devis:
+            uri_prefix: /PIDEV-sant-et-bien-tre\web\devis
+            upload_destination: '%kernel.root_dir%/../web/devis/'
+            namer: vich_uploader.namer_uniqid

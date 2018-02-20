@@ -3,10 +3,12 @@
 namespace MyApp\DoctorBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * Cabinet
- *
+ * @Vich\Uploadable
  * @ORM\Table(name="cabinet")
  * @ORM\Entity(repositoryClass="MyApp\DoctorBundle\Repository\CabinetRepository")
  */
@@ -53,6 +55,29 @@ class Cabinet
      * @ORM\OneToOne(targetEntity="MyApp\UserBundle\Entity\User", cascade={"persist"})
      */
     protected $user;
+
+
+
+    /**
+     * @Vich\UploadableField(mapping="devis", fileNameProperty="devisName")
+     *
+     * @var File
+     */
+    private $devisFile;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     *
+     * @var string
+     */
+    private $devisName;
+
+    /**
+     * @ORM\Column(type="datetime")
+     *
+     * @var \DateTime
+     */
+    private $updatedAt;
 
 
 
@@ -169,6 +194,49 @@ class Cabinet
     public function setUser($user)
     {
         $this->user = $user;
+    }
+
+    /**
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $devis
+     *
+     * @return Cabinet
+     */
+    public function setDevisFile(File $devis = null)
+    {
+        $this->devisFile = $devis;
+
+        if ($devis)
+            $this->updatedAt = new \DateTimeImmutable();
+
+        return $this;
+    }
+
+    /**
+     * @return File|null
+     */
+    public function getDevisFile()
+    {
+        return $this->devisFile;
+    }
+
+    /**
+     * @param string $devisName
+     *
+     * @return Cabinet
+     */
+    public function setDevisName($devisName)
+    {
+        $this->devisName = $devisName;
+
+        return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getDevisName()
+    {
+        return $this->devisName;
     }
 
 

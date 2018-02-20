@@ -26,6 +26,10 @@ Cabinet:
     path:     /cabinet/{spec}
     defaults: { _controller: MyAppDoctorBundle:Cabinet:Cabinet}
 
+quiz:
+    path:     /quiz
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:quiz}
+
 findRdv:
     path:     /myreservation
     defaults: { _controller: MyAppDoctorBundle:Cabinet:MyReservation}

@@ -1,0 +1,92 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+    <div class="careplus-main-content">
+    <div class="careplus-main-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="careplus-appointment-request-form">
+        <form method="post">
+
+            <ul>
+
+
+            <li class="careplus-appointment-fullform"> <span>Age:</span> </li>
+            <li class="careplus-appointment-fullform">
+                <div class="careplus-radio">
+                    <div class="careplus-radio-partition">
+                        <input id="male" name="age" checked="checked" value="under 20" type="radio">
+                        <label for="male">Under 20</label>
+                    </div>
+                    <div class="careplus-radio-partition">
+                        <input id="female" name="age" value="between 20 and 60" type="radio">
+                        <label for="female">Between 20 and 60</label>
+                    </div>
+                    <div class="careplus-radio-partition">
+                        <input id="other" name="ap_gender" value="over 60" type="radio">
+                        <label for="other">Over 60</label>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="careplus-appointment-fullform"> <span>Sexe:</span> </li>
+            <li class="careplus-appointment-fullform">
+                <div class="careplus-radio">
+                    <div class="careplus-radio-partition">
+                        <input id="homme" name="sexe" checked="checked" value="homme" type="radio">
+                        <label for="homme">Male</label>
+                    </div>
+                    <div class="careplus-radio-partition">
+                        <input id="femme" name="sexe" value="femme" type="radio">
+                        <label for="femme">Female</label>
+                    </div>
+
+                </div>
+            </li>
+
+            <li class="careplus-appointment-fullform"> <span>Douleur:</span> </li>
+            <li class="careplus-appointment-fullform">
+                <div class="careplus-radio">
+                    <div class="careplus-radio-partition">
+                        <input id="stomach" name="douleur" checked="checked" value="stomach" type="radio">
+                        <label for="stomach">Ventre</label>
+                    </div>
+                    <div class="careplus-radio-partition">
+                        <input id="head" name="douleur" value="head" type="radio">
+                        <label for="head">maux de tete</label>
+                    </div>
+                    <div class="careplus-radio-partition">
+                        <input id="fracture" name="douleur" value="fracture" type="radio">
+                        <label for="fracture">Fracture/Blessure</label>
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+            <li><label> <input type="submit" value="Search Now"> <span></span></label></li>
+                </ul>
+        </form>
+{% if quizs2 is defined %}
+    {% for c in quizs2 %}
+    <h3>Il faut Consulter un {{ c.type }}</h3>
+    {% endfor %}
+
+{% endif %}
+
+
+</div></div></div></div></div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
