@@ -1,0 +1,22 @@
+<h3>Liste de Modeles</h3>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>NomDocteur</th>
+        <th>Adresse</th>
+        <th>Phone Number</th>
+        <th>Specialite</th>
+        <th>Supprimer</th>
+    </tr>
+    {% for c in cabinets %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nomDocteur }}</td>
+            <td>{{ c.addresse }}</td>
+            <td>{{ c.tel }}</td>
+            <td>{{ c.specialite }}</td>
+            <td><a href="{{ path ('deletecabinet', {'id':c.id} ) }}" >Supprimer</a></td>
+        </tr>
+    {% endfor %}
+</table>
+</ul>

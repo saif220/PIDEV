@@ -56,3 +56,16 @@ listDrug:
 rechercheDrug:
     path:     /recherchedrug
     defaults: { _controller: MyAppUserBundle:Admin:rechercheDrug}
+
+listuseradmin:
+    path:     /listuseradmin
+    defaults: { _controller: MyAppUserBundle:Admin:listUser}
+
+
+deleteuser:
+    path:     /admindeleteuser{id}
+    defaults: { _controller: MyAppUserBundle:Admin:admindeleteuser}
+
+
+
+

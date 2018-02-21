@@ -1,3 +1,18 @@
-Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaa
+<center><h2>Reservation Voucher</h2></center>
+
+
+
+
+{% for c in rs %}
+
+        <ul>
+            <li>Your Name: {{ c.nompatient }}</li>
+            <li>Doctor's name: {{ c.doctorname }}</li>
+            <li>Day: Next {{ c.nompatient }}</li>
+            <li>Hour: {{ c.nompatient }}</li>
+
+        </ul>
+
+
+
+{% endfor %}

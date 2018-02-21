@@ -179,12 +179,19 @@ class CabinetController extends Controller
 
     public function pdfAction(Request $request)
     {
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery(
+            'SELECT v From MyAppDoctorBundle:RDV v ORDER BY v.id DESC ')->setMaxResults(1);
+
+        $rs = $query->getResult();
+
+
 
         $snappy=$this->get("knp_snappy.pdf");
-
         $html=$this->renderView("MyAppDoctorBundle:Cabinet:reservationpdf.html.twig",array(
-           "Title"=> "Reservation de Rendez-vous"
+           "Title"=> "Reservation de Rendez-vous","rs"=>$rs
         ));
+
 
         $filename="Reservation";
 
