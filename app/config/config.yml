@@ -103,3 +103,8 @@ knp_snappy:
         enabled:    true
         binary:     "\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltoimage.exe\""
         options:    []
+
+fos_message:
+    db_driver: orm
+    thread_class: MyApp\UserBundle\Entity\Thread
+    message_class: MyApp\UserBundle\Entity\Message

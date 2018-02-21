@@ -45,6 +45,10 @@ Shop:
     path:     /Shop
     defaults: { _controller: MyAppUserBundle:Default:Shop}
 
+fos_message:
+    resource: "@FOSMessageBundle/Resources/config/routing.xml"
+    prefix: /message
+
 AddDrug:
     path:     /addDrug
     defaults: { _controller: MyAppUserBundle:Admin:add}
