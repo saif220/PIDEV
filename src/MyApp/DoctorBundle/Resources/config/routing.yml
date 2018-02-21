@@ -2,6 +2,10 @@ my_app_doctor_homepage:
     path:     /
     defaults: { _controller: MyAppDoctorBundle:Default:index }
 
+resetrdv:
+    path:     /resetrdv{named}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:resetrdv}
+
 Add_Cabinet:
     path:     /addcabinet
     defaults: { _controller: MyAppDoctorBundle:Cabinet:add}
@@ -17,6 +21,14 @@ rechercheCabinet:
 map:
     path:     /map
     defaults: { _controller: MyAppDoctorBundle:Cabinet:map }
+
+pdf:
+    path:   /pdfrdv
+    defaults: {_controller: MyAppDoctorBundle:Cabinet:pdf}
+
+deleterdv:
+    path:     /deleterdv{id}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:annulerrdv}
 
 findCabinet:
     path:     /mycabinet

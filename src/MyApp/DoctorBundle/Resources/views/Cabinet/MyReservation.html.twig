@@ -13,6 +13,7 @@
                                 <li>Day</li>
                                 <li>Hour</li>
                                 <li>Phone Number</li>
+                                <li>Annuler Reservation</li>
                             </ul>
                             {% for c in rdv %}
                                 <ul>
@@ -22,6 +23,10 @@
                                     <li>{{ c.day }}</li>
                                     <li>{{ c.hour }}</li>
                                     <li>{{ c.numtel }}</li>
+                                    <li><a href="{{ path ('deleterdv', {'id':c.id} ) }}" >Annuler</a>
+
+                                    </li>
+                                    <li><a href="{{ path ('resetrdv', {'named':c.doctorname} ) }}" >reset</a></li>
                                 </ul>
                             {% endfor %}
 

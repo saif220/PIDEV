@@ -18,8 +18,8 @@
       <file leaf-file-name="Cabinet.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/Cabinet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="686">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="e#45#77#0#PHP" expanded="true" />
               </folding>
@@ -27,41 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rechercheCabinet.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/rechercheCabinet.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quiz.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/quiz.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="75" column="8" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quiz.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/Quiz.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+            <state relative-caret-position="486">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -70,48 +40,80 @@
       <file leaf-file-name="CabinetController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Controller/CabinetController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="62" column="133" lean-forward="false" selection-start-line="62" selection-start-column="133" selection-end-line="62" selection-end-column="133" />
+            <state relative-caret-position="261">
+              <caret line="216" column="28" lean-forward="false" selection-start-line="216" selection-start-column="28" selection-end-line="216" selection-end-column="28" />
               <folding>
                 <element signature="e#132#170#0#PHP" expanded="true" />
-                <marker date="1519146306555" expanded="true" signature="1950:2092" ph="SELECT v Fro... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="2667:2674" ph="SELECT d FRO... AppBundle" />
-                <marker date="1519146306555" expanded="true" signature="2667:2771" ph="SELECT v Fro... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="3977:4081" ph="SELECT v Fro... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="3977:4084" ph="SELECT v Fro... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="4682:4824" ph="SELECT v.age... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="4682:4831" ph="SELECT v.age... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="5600:5719" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="5600:5727" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="5600:5728" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="5600:5729" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="5600:5768" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="5600:5775" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="5898:6067" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="6196:6367" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="6496:6666" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="6795:6963" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="7094:7270" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="7402:7572" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="7704:7876" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="8008:8179" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="8311:8480" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="8614:8790" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="8922:9092" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="9224:9396" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="9528:9699" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="9831:10000" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="10133:10309" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="10441:10611" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="10743:10915" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="11047:11218" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="11350:11519" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="11653:11829" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="11961:12131" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="12263:12435" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="12567:12738" ph="SELECT v.day... MyAppDoctorBundle" />
-                <marker date="1519146306555" expanded="true" signature="12870:13039" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="1998:2140" ph="SELECT v Fro... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="2715:2819" ph="SELECT v Fro... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="4025:4132" ph="SELECT v Fro... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="4730:4879" ph="SELECT v.typ... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="7022:7197" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="7320:7489" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="7618:7789" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="7918:8088" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="8217:8385" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="8516:8692" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="8824:8994" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="9126:9298" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="9430:9601" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="9733:9902" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="10036:10212" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="10344:10514" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="10646:10818" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="10950:11121" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="11253:11422" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="11555:11731" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="11863:12033" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="12165:12337" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="12469:12640" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="12772:12941" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="13075:13251" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="13383:13553" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="13685:13857" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="13989:14160" ph="SELECT v.day... MyAppDoctorBundle" />
+                <marker date="1519219155247" expanded="true" signature="14292:14461" ph="SELECT v.day... MyAppDoctorBundle" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RDV.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/RDV.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reservationpdf.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/reservationpdf.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyReservation.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/MyReservation.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="103" column="20" lean-forward="false" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,7 +133,6 @@
       <find>href=&quot;</find>
       <find>src=&quot;</find>
       <find>href=&quot;{{</find>
-      <find>form</find>
       <find>src=</find>
       <find>href=</find>
       <find>assets</find>
@@ -155,6 +156,7 @@
       <find>entities</find>
       <find>src</find>
       <find>doo</find>
+      <find>form</find>
     </findStrings>
     <replaceStrings>
       <replace>{{asset('assets</replace>
@@ -164,7 +166,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s generate:bundle" />
       <command text="s doctrine:generate:form Cabinet" />
       <command text="s doctrine:generate:form MyAppDoctorBundle Cabinet" />
       <command text="s doctrine:generate:form MyAppDoctorBundle:Cabinet" />
@@ -189,6 +190,7 @@
       <command text="s cache:clear" />
       <command text="s doctrine:schema:update --force " />
       <command text="php" />
+      <command text="composer require knplabs/knp-snappy-bundle" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -201,7 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Security/LoginSuccessHandler.php" />
         <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Admin/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Entity/Commande.php" />
         <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Default/index.html.twig" />
@@ -234,24 +235,25 @@
         <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Registration/register_content.html.twig" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/MyCabinet.html.twig" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/RDV.php" />
-        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/updaterdv.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Form/RDVType.php" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/reservation.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/MyReservation.html.twig" />
         <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Profile/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/Cabinet.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/listCabinet.html.twig" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Form/CabinetType.php" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/addCabinet.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/docteurrechercher.html.twig" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/Quiz.php" />
         <option value="$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/quiz.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Controller/CabinetController.php" />
         <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/rechercheCabinet.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Form/RDVType.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/reservationpdf.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/updaterdv.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Controller/CabinetController.php" />
+        <option value="$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/MyReservation.html.twig" />
       </list>
     </option>
   </component>
@@ -304,6 +306,8 @@
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
       <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -327,6 +331,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -334,6 +339,17 @@
             <path>
               <item name="PIDEV-sant-et-bien-tre" type="b2602c69:ProjectViewProjectNode" />
               <item name="PIDEV-sant-et-bien-tre" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PIDEV-sant-et-bien-tre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIDEV-sant-et-bien-tre" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PIDEV-sant-et-bien-tre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIDEV-sant-et-bien-tre" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="PIDEV-sant-et-bien-tre" type="b2602c69:ProjectViewProjectNode" />
@@ -488,11 +504,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
@@ -550,12 +565,13 @@
       <workItem from="1518778910874" duration="4628000" />
       <workItem from="1518785204601" duration="133000" />
       <workItem from="1518786212420" duration="43336000" />
-      <workItem from="1519131973381" duration="13133000" />
+      <workItem from="1519131973381" duration="16604000" />
+      <workItem from="1519208045723" duration="10816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175795000" />
+    <option name="totallyTimeSpent" value="190082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,23 +586,23 @@
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24324325" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25351351" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30931678" sideWeight="0.5043243" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49068323" sideWeight="0.49567568" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12298137" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.889441" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12298137" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -601,13 +617,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Pages/Contact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4310">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Pages/Doctor.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -775,23 +784,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/updaterdv.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Form/RDVType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="e#43#83#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -806,13 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/MyReservation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -839,37 +825,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="21" column="57" lean-forward="false" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2225">
-          <caret line="89" column="57" lean-forward="false" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Form/CabinetType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#83#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MyApp/UserBundle/Resources/views/Security/login_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1825">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,15 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/RDV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,21 +851,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/docteurrechercher.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/docteurrechercher.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/Quiz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
+        <state relative-caret-position="3425">
           <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding />
         </state>
@@ -925,15 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1171">
           <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="30" column="59" lean-forward="false" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,80 +874,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2150">
           <caret line="86" column="98" lean-forward="false" selection-start-line="86" selection-start-column="98" selection-end-line="86" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/addCabinet.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/quiz.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="1875">
           <caret line="75" column="8" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/Cabinet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <element signature="e#45#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Controller/CabinetController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="62" column="133" lean-forward="false" selection-start-line="62" selection-start-column="133" selection-end-line="62" selection-end-column="133" />
-          <folding>
-            <element signature="e#132#170#0#PHP" expanded="true" />
-            <marker date="1519146306555" expanded="true" signature="1950:2092" ph="SELECT v Fro... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="2667:2674" ph="SELECT d FRO... AppBundle" />
-            <marker date="1519146306555" expanded="true" signature="2667:2771" ph="SELECT v Fro... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="3977:4081" ph="SELECT v Fro... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="3977:4084" ph="SELECT v Fro... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="4682:4824" ph="SELECT v.age... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="4682:4831" ph="SELECT v.age... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="5600:5719" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="5600:5727" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="5600:5728" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="5600:5729" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="5600:5768" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="5600:5775" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="5898:6067" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="6196:6367" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="6496:6666" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="6795:6963" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="7094:7270" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="7402:7572" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="7704:7876" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="8008:8179" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="8311:8480" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="8614:8790" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="8922:9092" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="9224:9396" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="9528:9699" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="9831:10000" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="10133:10309" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="10441:10611" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="10743:10915" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="11047:11218" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="11350:11519" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="11653:11829" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="11961:12131" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="12263:12435" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="12567:12738" ph="SELECT v.day... MyAppDoctorBundle" />
-            <marker date="1519146306555" expanded="true" signature="12870:13039" ph="SELECT v.day... MyAppDoctorBundle" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1022,6 +889,134 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/addCabinet.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Form/RDVType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/Cabinet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Form/CabinetType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/updaterdv.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="43" column="35" lean-forward="false" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="103" column="20" lean-forward="false" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/reservationpdf.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Entity/RDV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Controller/CabinetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="216" column="28" lean-forward="false" selection-start-line="216" selection-start-column="28" selection-end-line="216" selection-end-column="28" />
+          <folding>
+            <element signature="e#132#170#0#PHP" expanded="true" />
+            <marker date="1519219155247" expanded="true" signature="1998:2140" ph="SELECT v Fro... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="2715:2819" ph="SELECT v Fro... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="4025:4132" ph="SELECT v Fro... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="4730:4879" ph="SELECT v.typ... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="7022:7197" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="7320:7489" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="7618:7789" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="7918:8088" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="8217:8385" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="8516:8692" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="8824:8994" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="9126:9298" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="9430:9601" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="9733:9902" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="10036:10212" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="10344:10514" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="10646:10818" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="10950:11121" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="11253:11422" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="11555:11731" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="11863:12033" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="12165:12337" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="12469:12640" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="12772:12941" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="13075:13251" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="13383:13553" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="13685:13857" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="13989:14160" ph="SELECT v.day... MyAppDoctorBundle" />
+            <marker date="1519219155247" expanded="true" signature="14292:14461" ph="SELECT v.day... MyAppDoctorBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyApp/DoctorBundle/Resources/views/Cabinet/MyReservation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>

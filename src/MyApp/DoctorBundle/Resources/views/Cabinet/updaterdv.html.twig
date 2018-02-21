@@ -1,2 +1,55 @@
-<h3>Mise a jour</h3>
-{{ form(form) }}
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+
+    <div class="careplus-subheader">
+        <div class="careplus-subheader-image">
+            <span class="careplus-dark-transparent"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>ADD You Cabinet</h1>
+                        <span>Aliquam in elit vel eros tincidunt pulvinar sit amet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="careplus-main-content">
+
+
+        <div class="col-md-12">
+            <div class="careplus-appointment-request-form">
+                {{ form_start(form) }}
+                <ul>
+                    <li class="careplus-appointment-fullform"> <span>Nom Patient</span> </li>
+                    <li>
+                        {{ form_widget(form.nompatient) }}                    </li>
+
+
+                    <li class="careplus-appointment-fullform"> <span>description:</span> </li>
+                    <li >
+
+                        {{ form_widget(form.description) }}                            </li>
+                    <li class="careplus-appointment-fullform"> <span>Phone Number</span> </li>
+                    <li>
+
+                        {{ form_widget(form.num_tel, {'attr': {'class': 'form-control'}}) }}                            </li>
+
+                        {{ form_end(form) }}
+                    <li class="careplus-appointment-fullform"> <li><label><input value="Submit Now" type="submit"><span></span></label></li>                </ul>
+                <span></span></div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+{% endblock %}

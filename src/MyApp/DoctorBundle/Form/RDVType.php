@@ -17,7 +17,7 @@ class RDVType extends AbstractType
         $builder->add('nompatient')
             ->add('description')
             ->add('num_tel')
-            ->add('save', SubmitType::class);
+            ;
     }/**
      * {@inheritdoc}
      */

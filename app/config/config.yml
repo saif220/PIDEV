@@ -90,3 +90,16 @@ vich_uploader:
             uri_prefix: /PIDEV-sant-et-bien-tre\web\devis
             upload_destination: '%kernel.root_dir%/../web/devis/'
             namer: vich_uploader.namer_uniqid
+
+
+
+
+knp_snappy:
+    pdf:
+        enabled:    true
+        binary:     "\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe\""
+        options:    []
+    image:
+        enabled:    true
+        binary:     "\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltoimage.exe\""
+        options:    []

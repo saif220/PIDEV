@@ -16,6 +16,8 @@ use MyApp\DoctorBundle\Form\RDVType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class CabinetController extends Controller
 {
@@ -162,6 +164,62 @@ class CabinetController extends Controller
 
     }
 
+
+
+    public function annulerrdvAction($id){
+        //instantier l'entity manager
+        $em = $this->getDoctrine()->getManager();
+        $rdv = $em->getRepository('MyAppDoctorBundle:RDV')->find($id); // recuperer le modele de la BD
+        //die("aa");
+        $em->remove($rdv);
+        $em->flush();
+        return ($this->redirectToRoute("findRdv"));
+
+    }
+
+    public function pdfAction(Request $request)
+    {
+
+        $snappy=$this->get("knp_snappy.pdf");
+
+        $html=$this->renderView("MyAppDoctorBundle:Cabinet:reservationpdf.html.twig",array(
+           "Title"=> "Reservation de Rendez-vous"
+        ));
+
+        $filename="Reservation";
+
+        return new Response(
+            $snappy->getOutputFromHtml($html),
+
+            200,
+            array(
+                'Content-Type' => 'application/pdf',
+                'Content-Disposition' => 'attachment; filename="'.$filename.'.pdf"'
+            )
+
+        );
+
+
+
+
+
+
+    }
+
+
+
+
+    public function resetrdvAction($named){
+        //instantier l'entity manager
+        $em = $this->getDoctrine()->getManager();
+        $rdv = $em->getRepository('MyAppDoctorBundle:RDV')->findby(array('doctorname' => $named)); // recuperer le modele de la BD
+        //die("aa");
+        foreach ($rdv as $o)
+        {$em->remove($o);
+        $em->flush();}
+        return ($this->redirectToRoute("listCabinet"));
+
+    }
 
 
 
@@ -844,7 +902,7 @@ class CabinetController extends Controller
         {
             $em->persist($Rdv);
             $em->flush();
-            return $this->redirectToRoute('listCabinet');
+            return $this->redirectToRoute('pdf');
         }
         return $this->render('MyAppDoctorBundle:Cabinet:updaterdv.html.twig',array("form"=>$form->createView()));
     }
