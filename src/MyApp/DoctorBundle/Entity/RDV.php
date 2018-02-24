@@ -71,7 +71,18 @@ private $num_tel;
     private $doctorname;
 
 
+    /**
+     * Many rdv have One user.
+     * @ORM\ManyToOne(targetEntity="MyApp\UserBundle\Entity\User")
+     */
+    private $userid;
 
+
+
+    /**
+     * @ORM\Column(type="date", length=255)
+     */
+    private $date;
 
 
     /**
@@ -184,6 +195,38 @@ private $num_tel;
     public function setDoctorname($doctorname)
     {
         $this->doctorname = $doctorname;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUserid()
+    {
+        return $this->userid;
+    }
+
+    /**
+     * @param mixed $userid
+     */
+    public function setUserid($userid)
+    {
+        $this->userid = $userid;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param mixed $date
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
     }
 
 

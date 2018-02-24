@@ -1,17 +1,68 @@
 
+
+
+
+
 {% extends 'MyAppUserBundle::layout.html.twig' %}
 {% block body %}
 
-{% block fos_message_content %}
+    <div class="careplus-subheader">
+        <div class="careplus-subheader-image">
+            <span class="careplus-dark-transparent"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>ADD You Cabinet</h1>
+                        <span>Aliquam in elit vel eros tincidunt pulvinar sit amet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<h2>{% trans from 'FOSMessageBundle' %}send_new aaaaaaaaaaaaaaa{% endtrans %}</h2>
+    </div>
 
-<form action="{{ url('fos_message_thread_new') }}" method="post">
-    {{ form_widget(form) }}
 
-    <input type="submit" />
-</form>
 
-{% endblock %}
+    <div class="careplus-main-content">
+
+
+        <div class="col-md-12">
+            <div class="careplus-appointment-request-form">
+                {% block fos_message_content %}
+
+                <h2>{% trans from 'FOSMessageBundle' %}send_new aaaaaaabbbbbbbbbbaaaaaaaa{% endtrans %}</h2>
+                <form action="{{ url('fos_message_thread_new') }}" method="post"> {{ form_start(form, {'attr': {'action': 'url("fos_message_thread_new")'}}) }}
+                    {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}                            </li>
+
+                    <ul>
+                    <li class="careplus-appointment-fullform"> <span>Nom Docteur</span> </li>
+                    <li>
+                        {{ form_widget(form.recipient) }}                    </li>
+
+
+                    <li class="careplus-appointment-fullform"> <span>Subject:</span> </li>
+                    <li >
+
+                        {{ form_widget(form.subject) }}                            </li>
+
+                    <li class="careplus-appointment-fullform"> <span>Body</span> </li>
+                    <li class="careplus-appointment-fullform">
+                        {{ form_widget(form.body) }}                            </li>
+
+
+
+                    <li class="careplus-appointment-fullform"> <li><label><input value="Submit Now" type="submit"><span></span></label></li>                </ul>
+                <span></span>
+                </form>{% endblock %}</div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
 
 {% endblock %}

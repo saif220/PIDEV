@@ -30,6 +30,10 @@ deleterdv:
     path:     /deleterdv{id}
     defaults: { _controller: MyAppDoctorBundle:Cabinet:annulerrdv}
 
+deleterdvU:
+    path:     /deleterdvU{id}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:annulerrdvU}
+
 findCabinet:
     path:     /mycabinet
     defaults: { _controller: MyAppDoctorBundle:Cabinet:MyCabinet}
@@ -45,6 +49,10 @@ quiz:
 findRdv:
     path:     /myreservation
     defaults: { _controller: MyAppDoctorBundle:Cabinet:MyReservation}
+
+findRdvU:
+    path:     /myreservationU
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:MyReservationU}
 
 reservation:
     path:     /reservation/{userd}

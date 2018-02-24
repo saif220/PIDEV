@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="careplus-appointment-request-form">
         <form method="post">
 
@@ -79,14 +79,24 @@
 {% endif %}
 
 
-</div></div></div></div></div>
+</div></div>
+                <div class="col-md-6">
+
+                    <ul>
+                    {% if quizs2 is defined %}
+                        On vous Propose Quelque Cabinet
+                        {% for b in quizs3 %}
+                            <li><h3><a href="{{ path('reservation',{'userd':b.nomDocteur}) }}"> Essayer Dr.{{ b.nomDocteur }} Specialité: {{ b.specialite }}</a></h3></li>
+
+                        {% endfor %}
+
+                    {% endif %}
+                    </ul>
+                </div>
 
 
 
 
-
-
-
-
+            </div></div></div>
 
 {% endblock %}

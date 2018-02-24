@@ -9,10 +9,12 @@
                             <ul class="schedule-days" >
                                 <li><span>ID</span></li>
                                 <li>Name Patient</li>
-                                <li>Description</li>
+
                                 <li>Day</li>
                                 <li>Hour</li>
+                                <li>Description</li>
                                 <li>Phone Number</li>
+                                <li>Date</li>
                                 <li>Annuler Reservation</li>
                             </ul>
                             {% for c in rdv %}
@@ -23,10 +25,15 @@
                                     <li>{{ c.day }}</li>
                                     <li>{{ c.hour }}</li>
                                     <li>{{ c.numtel }}</li>
-                                    <li><a href="{{ path ('deleterdv', {'id':c.id} ) }}" >Annuler</a>
+                                    <li>{{ "now"|date('Y-m-d') }}</li>
 
+
+                                    {% if "now"|date('Y/m/d') > c.date|date_modify("-5 day")|date("Y/m/d") %}
+                                    <li><a href="#" class="available-btn booked">Annuler</a>
+                                        {% else %}
+                                    <li><a href="{{ path ('deleterdv', {'id':c.id} ) }}" class="available-btn " >Annuler</a>
+                                        {% endif %}
                                     </li>
-                                    <li><a href="{{ path ('resetrdv', {'named':c.doctorname} ) }}" >reset</a></li>
                                 </ul>
                             {% endfor %}
 

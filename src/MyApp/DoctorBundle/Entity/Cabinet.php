@@ -58,6 +58,9 @@ class Cabinet
 
 
 
+
+
+
     /**
      * @Vich\UploadableField(mapping="devis", fileNameProperty="devisName")
      *

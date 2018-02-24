@@ -9,6 +9,7 @@
 namespace MyApp\DoctorBundle\Controller;
 
 
+use DateTime;
 use MyApp\DoctorBundle\Entity\Cabinet;
 use MyApp\DoctorBundle\Entity\RDV;
 use MyApp\DoctorBundle\Form\CabinetType;
@@ -139,6 +140,24 @@ class CabinetController extends Controller
     }
 
 
+    public function MyReservationUAction()
+    {$user=$this->getUser();
+        $id=$user->getId();
+
+
+
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery(
+            'SELECT v From MyAppDoctorBundle:RDV v  
+                                          WHERE v.userid = :id')->setParameter('id',$id);
+        $rdv = $query->getResult();
+        return $this->render('MyAppDoctorBundle:Cabinet:MyReservationU.html.twig',array("rdv"=>$rdv));
+
+
+
+    }
+
+
 
     public function quizAction(Request $request)
     {
@@ -156,7 +175,15 @@ class CabinetController extends Controller
                                                                                                         ->setParameter('sexe',$sexe)
                                                                                                         ->setParameter('douleur',$douleur);
             $quizs2 = $query->getResult();
-            return $this->render('MyAppDoctorBundle:Cabinet:quiz.html.twig',array('quizs2' => $quizs2));
+            $a=$quizs2;
+            $query2 = $em->createQuery(
+                "SELECT v From MyAppDoctorBundle:Cabinet v  
+                                          WHERE v.specialite = :a")->setParameter('a',$a);
+            $quizs3 = $query2->getResult();
+
+
+            return $this->render('MyAppDoctorBundle:Cabinet:quiz.html.twig',array('quizs2' => $quizs2,
+                                                                                'quizs3' => $quizs3));
         }else{
 
             return $this->render('MyAppDoctorBundle:Cabinet:quiz.html.twig',array('quizs' => $quizs));
@@ -176,6 +203,24 @@ class CabinetController extends Controller
         return ($this->redirectToRoute("findRdv"));
 
     }
+
+
+
+    public function annulerrdvUAction($id){
+        //instantier l'entity manager
+        $em = $this->getDoctrine()->getManager();
+        $rdv = $em->getRepository('MyAppDoctorBundle:RDV')->find($id); // recuperer le modele de la BD
+        //die("aa");
+
+        $em->remove($rdv);
+        $em->flush();
+        return ($this->redirectToRoute("findRdv"));
+
+    }
+
+
+
+
 
     public function pdfAction(Request $request)
     {
@@ -409,10 +454,17 @@ class CabinetController extends Controller
 
     public function Reservation1Action($userd){
 
+
         $day="Monday";
         $hour="9h-10h";
 
         $rdv = new RDV();
+
+        $date = new DateTime();
+        $date->modify('next monday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -433,6 +485,11 @@ class CabinetController extends Controller
         $hour="9h-10h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next tuesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -452,6 +509,11 @@ class CabinetController extends Controller
         $hour="9h-10h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next wednesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -471,6 +533,11 @@ class CabinetController extends Controller
         $hour="9h-10h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next thursday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -490,6 +557,11 @@ class CabinetController extends Controller
         $hour="9h-10h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next friday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -510,6 +582,11 @@ class CabinetController extends Controller
         $hour="10h-11h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next monday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -530,6 +607,11 @@ class CabinetController extends Controller
         $hour="10h-11h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next tuesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -549,6 +631,11 @@ class CabinetController extends Controller
         $hour="10h-11h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next wednesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -568,6 +655,11 @@ class CabinetController extends Controller
         $hour="10h-11h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next thursday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -587,6 +679,11 @@ class CabinetController extends Controller
         $hour="10h-11h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next friday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -608,6 +705,11 @@ class CabinetController extends Controller
         $hour="11h-12h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next monday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -628,6 +730,11 @@ class CabinetController extends Controller
         $hour="11h-12h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next tuesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -647,6 +754,11 @@ class CabinetController extends Controller
         $hour="11h-12h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next wednesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -666,6 +778,11 @@ class CabinetController extends Controller
         $hour="11h-12h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next thursday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -685,6 +802,11 @@ class CabinetController extends Controller
         $hour="11h-12h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next friday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -707,6 +829,11 @@ class CabinetController extends Controller
         $hour="14h-15h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next monday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -727,6 +854,11 @@ class CabinetController extends Controller
         $hour="14h-15h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next tuesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -746,6 +878,11 @@ class CabinetController extends Controller
         $hour="14h-15h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next wednesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -765,6 +902,11 @@ class CabinetController extends Controller
         $hour="14h-15h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next thursday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -784,6 +926,11 @@ class CabinetController extends Controller
         $hour="14h-15h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next friday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -802,6 +949,11 @@ class CabinetController extends Controller
         $hour="15h-16h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next monday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -822,6 +974,11 @@ class CabinetController extends Controller
         $hour="15h-16h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next tuesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -841,6 +998,11 @@ class CabinetController extends Controller
         $hour="15h-16h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next wednesday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -860,6 +1022,11 @@ class CabinetController extends Controller
         $hour="15h-16h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next thursday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
@@ -879,6 +1046,11 @@ class CabinetController extends Controller
         $hour="15h-16h";
 
         $rdv = new RDV();
+        $date = new DateTime();
+        $date->modify('next friday');
+        $rdv->setDate($date);
+        $user=$this->getUser();
+        $rdv->setUserid($user);
         $rdv->setDoctorname($userd);
         $rdv->setDay($day);
         $rdv->setHour($hour);
