@@ -1,0 +1,23 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+
+
+
+
+
+
+
+    <div class="col-md-12" style="padding-top: 30px">
+    <div class="careplus-appointment-request-form" style="">
+    {{ form_start(form) }}
+    <ul>
+<li class="careplus-appointment-fullform"> <span>Rating</span> </li>
+<li>
+    {{ form_widget(form.rating) }}                         </li>
+{{ form_end(form) }}
+        <li class="careplus-appointment-fullform">
+        <li><label><input value="Submit Now" type="submit"><span></span></label></li>        </il>        </ul>
+        <span></span>
+    </div>
+    </div>
+{% endblock %}

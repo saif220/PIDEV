@@ -14,6 +14,8 @@
         <link href="{{ asset('style.css') }}" rel="stylesheet">
         <link href="{{ asset('css/color.css') }}" rel="stylesheet">
         <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/rating.css') }}" rel="stylesheet" >
+
 
     {% endblock %}
 
@@ -29,7 +31,7 @@
     <div class="careplus-main-header">
         <div class="container">
             <div class="row">
-                <aside class="col-md-3"><a href="index.html" class="careplus-logo"><img src="{{asset ('images/logo.png') }}" alt=""></a></aside>
+                <aside class="col-md-3"><a href="{{ path ('my_app_user_homepage') }}" class="careplus-logo"><img src="{{asset ('images/logo.png') }}" alt=""></a></aside>
                 <aside class="col-md-9">
                     <ul class="careplus-infolist">
                         <li>
@@ -48,7 +50,8 @@
                         </li>
                     </ul>
                     {% if not is_granted('IS_AUTHENTICATED_REMEMBERED') %}
-                    <a href="{{ path ('fos_user_security_login') }}" class="careplus-booking-btn careplus-bgcolor-two">Login</a>
+                    <a href="{{ path ('fos_user_security_login') }}" class="careplus-booking-btn careplus-bgcolor-two" >Login</a>
+
                       <a href="{{ path ('fos_user_registration_register') }}" class="careplus-booking-btn careplus-bgcolor-two">Register</a>
                     {% else %}
                         <a href="{{ path ('fos_user_security_logout') }}" class="careplus-booking-btn careplus-bgcolor-two">Logout</a>
@@ -77,7 +80,8 @@
                             </div>
                             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="{{ path ('homepage') }}">Home</a></li>
+
+                                    <li><a href="{{ path ('my_app_user_homepage') }}">Home</a></li>
                                     <li><a href="{{ path ('Doctor') }}">Doctor & Pharmacy</a>
                                         <ul class="careplus-dropdown-menu">
                                             <li><a href="{{ path ('rechercheCabinet') }}">Rechercher Un Cabinet</a></li>
@@ -93,7 +97,7 @@
                                     <li><a href="{{ path('fos_user_profile_show') }}">Profile</a>
 
                                     </li>
-                                    <li><a href="{{ path ('Shop') }}">Our Shop</a>
+                                    <li><a href="{{ path ('shop_RechercherProduit') }}">Our Shop</a>
 
                                     </li>
                                     <li class="careplus-megamenu-li"><a href="{{ path('Contact') }}">Contact us</a>
@@ -106,6 +110,7 @@
                             <li><a href="#" class="careplus-color-two fa fa-shopping-cart"></a>
                                 <div class="careplus-cart-box"> <p>No products in the cart.</p> </div>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -250,6 +255,9 @@
     <script type="text/javascript" src="{{ asset('script/progressbar.js') }}"></script>
     <script type="text/javascript" src="{{ asset('script/counter.js') }}"></script>
     <script type="text/javascript" src="{{ asset('script/functions.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('script/jquery-3.2.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('script/rating.js') }}"></script>
+
 {% endblock %}
 
 </body>

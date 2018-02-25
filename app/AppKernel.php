@@ -3,6 +3,7 @@
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
+
 class AppKernel extends Kernel
 {
     public function registerBundles()
@@ -19,6 +20,10 @@ class AppKernel extends Kernel
             new MyApp\UserBundle\MyAppUserBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new MyApp\DoctorBundle\MyAppDoctorBundle(),
+            new MyApp\ShopBundle\MyAppShopBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new blackknight467\StarRatingBundle\StarRatingBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

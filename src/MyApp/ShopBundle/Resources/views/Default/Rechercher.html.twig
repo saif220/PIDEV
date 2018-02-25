@@ -1,0 +1,86 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+
+    <!--// SubHeader \\-->
+    <div class="careplus-subheader">
+        <div class="careplus-subheader-image">
+            <span class="careplus-dark-transparent"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Shop</h1>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="careplus-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="{{ path ('my_app_user_homepage') }}">Homepage</a></li>
+                            <li>Shop</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!--// Main Section \\-->
+                        <div class="careplus-search-result-text">
+                            <h3>Rechercher</h3>
+                            <form method="post">
+
+                                <input value="" type="text" name="recherche" placeholder="what are you looking for ?">
+
+                                <div><a href="{{ path ('shop_TrierProduit') }}" class="careplus-booking-btn careplus-bgcolor-two" >Trier Par Prix</a>
+                                </div>
+
+                                <label> <input type="Submit" value="Search Now"> <span></span></label>
+                            </form>
+
+                        </div>
+
+
+
+    <!--// Main Content \\-->
+    <div class="careplus-main-content">
+
+    <!--// Main Section \\-->
+    <div class="careplus-main-section">
+    <div class="container">
+    <div class="row">
+
+    <div class="col-md-12">
+    <div class="careplus-shop careplus-shop-grid">
+        <ul class="row">
+            {% for lots in Modeles %}
+                <li class="col-md-4">
+                    <figure><a href ="{{  path ('shop_AfficherDetail', {'id':lots.id, 'type':lots.type, 'libelle':lots.libelle, 'prix':lots.prix, 'categorie':lots.categorie, 'description':lots.description,'tel':lots.tel, 'image':lots.image, 'rating':lots.rating,} ) }}"><img src="{{ asset('img/' ~ lots.image) }}" alt="" style="width: 360px; height: 300px"><span><i class="fa fa-link"></i><small></small></span></a></figure>
+                    <div class="careplus-shop-grid-text">
+                        <h5><a href ="{{  path ('shop_AfficherDetail', {'id':lots.id, 'type':lots.type, 'libelle':lots.libelle, 'prix':lots.prix, 'categorie':lots.categorie, 'description':lots.description,'tel':lots.tel, 'image':lots.image, 'rating':lots.rating,} ) }}">{{ lots.libelle }}</a></h5>
+                        <span>{{ lots.prix }} DT</span>
+                        <p>{{ lots.type }}</p>
+                        <a href="{{  path ('shop_AfficherDetail', {'id':lots.id, 'type':lots.type, 'libelle':lots.libelle, 'prix':lots.prix, 'categorie':lots.categorie, 'description':lots.description,'tel':lots.tel, 'image':lots.image, 'rating':lots.rating,} ) }}" class="careplus-readmore-btn">Detail <span></span></a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="navigation text-center">
+    {{ knp_pagination_render(Mod) }}
+    </div>
+
+
+
+{% endblock %}

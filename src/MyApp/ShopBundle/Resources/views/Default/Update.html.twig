@@ -1,0 +1,74 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+
+    <!--// SubHeader \\-->
+    <div class="careplus-subheader">
+        <div class="careplus-subheader-image">
+            <span class="careplus-dark-transparent"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Shop</h1>
+                        <span>Ajouter un Produit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="careplus-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="{{ path ('my_app_user_homepage') }}">Homepage</a></li>
+                            <li>Shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="col-md-12" style="padding-top: 30px">
+        <div class="careplus-appointment-request-form" style="">
+            {{ form_start(Form) }}
+            <ul>
+                <li class="careplus-appointment-fullform"> <span>Type</span> </li>
+                <li>
+                    {{ form_widget(Form.type) }}                    </li>
+
+
+                <li class="careplus-appointment-fullform"> <span>Libelle</span> </li>
+                <li>
+                    {{ form_widget(Form.libelle) }}
+                <li class="careplus-appointment-fullform"> <span>Prix</span> </li>
+                <li>
+                    {{ form_widget(Form.prix) }}                            </li>
+                <li class="careplus-appointment-fullform"> <span>Categorie</span> </li>
+                <li>
+                    {{ form_widget(Form.categorie) }}                            </li>
+                <li class="careplus-appointment-fullform"> <span>Description</span> </li>
+                <li>
+                    {{ form_widget(Form.description) }}                            </li>
+                <li class="careplus-appointment-fullform"> <span>Image</span> </li>
+                <li>
+                    {{ form_widget(Form.image) }}                            </li>
+                {{ form_end(Form) }}
+                <li class="careplus-appointment-fullform">
+                <li><label><input value="Submit Now" type="submit"><span></span></label></li>        </il>        </ul>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

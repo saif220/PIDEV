@@ -1,0 +1,64 @@
+
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Suppression</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p>Voulez vous vraiment supprimer cette image ?</p>
+                    <p style="color: #ac2925">Cette action est irreversible!</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="button btn-small  text-center" data-dismiss="modal" type="submit">Annuler</button>
+                    <button class="button btn-small red  text-center remove_item"  type = "submit">Supprimer</button>
+                </div>
+                <input id="remove" >
+            </div>
+        </div>
+    </div>
+
+<script>
+    $(document).ready(function () {
+
+        $(".delete-btn").click(function(e){
+            var id = e.target.id;
+            $(".delete-btn").addClass('toremove');
+            $("#remove").val(id);
+            console.log('waaaaaaaaaa3');
+            console.log(id);
+        });
+        $(".remove_item").click(function () {
+
+            var id =   $("#remove").val();
+            console.log(id);
+            $.ajax({
+                type: 'POST',
+                dataType: 'html',
+                url: Routing.generate('shop_DeleteProduit',{'id':id}),
+                success: function (resultat) {
+                    $(".delete-btn").removeClass('toremove');
+                    // jQuery("#div").reload();
+                    //window.location.reload();
+
+                    jQuery('#myModal').modal('hide');
+                    jQuery("#content").fadeOut(function() {
+                        jQuery("#content").empty();
+                    });
+                    jQuery("#content").fadeIn(function() {
+                        jQuery("#content").html(resultat).fadeIn();
+                    });
+
+                }
+            });
+
+        });
+
+    });
+    </script>

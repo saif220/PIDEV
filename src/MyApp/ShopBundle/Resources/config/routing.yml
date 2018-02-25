@@ -1,0 +1,48 @@
+shop_homepage:
+    path:     /
+    defaults: { _controller: MyAppShopBundle:Default:index }
+shop_AjouterProduit:
+    path:     /AjouterProduit
+    defaults: { _controller: MyAppShopBundle:Shop:AjouterProduit }
+shop_AfficherProduit:
+    path:     /AfficherProduit
+    defaults: { _controller: MyAppShopBundle:Shop:AfficherProduit }
+shop_DeleteProduit:
+    path:     /DeleteProduit/{id}
+    defaults: { _controller: MyAppShopBundle:Shop:DeleteProduit }
+shop_UpdateProduit:
+    path:     /UpdateProduit/{id}
+    defaults: { _controller: MyAppShopBundle:Shop:UpdateProduit }
+shop_RechercherProduit:
+    path:     /RechercherProduit
+    defaults: { _controller: MyAppShopBundle:Shop:RechercherProduit }
+shop_AfficherDetail:
+    path:     /AfficherDetail
+    defaults: { _controller: MyAppShopBundle:Shop:AfficherDetail }
+Rating:
+    path:     /Rating{id}
+    defaults: { _controller: MyAppShopBundle:Shop:rating }
+shop_Supp:
+    path:     /SuppProduit/{id}
+    defaults: { _controller: MyAppShopBundle:Shop:SuppAjaxProduit }
+shop_AjouterProduit_Back:
+    path:     /AjouterProduitBack
+    defaults: { _controller: MyAppShopBundle:Shop:AjouterProduitBack }
+shop_AfficherProduit_Back:
+    path:     /AfficherProduitBack
+    defaults: { _controller: MyAppShopBundle:Shop:AfficherProduitBack }
+shop_DeleteProduit_Back:
+    path:     /DeleteProduitBack/{id}
+    defaults: { _controller: MyAppShopBundle:Shop:DeleteProduitBack }
+shop_UpdateProduit_Back:
+    path:     /UpdateProduitBack/{id}
+    defaults: { _controller: MyAppShopBundle:Shop:UpdateProduitBack }
+shop_RechercherProduit_Back:
+    path:     /RechercherProduitBack
+    defaults: { _controller: MyAppShopBundle:Shop:RechercherProduitBack }
+shop_AfficherDetail_Back:
+    path:     /AfficherDetailBack
+    defaults: { _controller: MyAppShopBundle:Shop:AfficherDetailBack }
+shop_TrierProduit:
+    path:     /TrierProduit
+    defaults: { _controller: MyAppShopBundle:Shop:TrierProduit }

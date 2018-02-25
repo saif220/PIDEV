@@ -2,6 +2,7 @@
 
 namespace MyApp\DoctorBundle\Repository;
 
+
 /**
  * CabinetRepository
  *

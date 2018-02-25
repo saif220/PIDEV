@@ -1,0 +1,239 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+
+{% block body %}
+    <div class="careplus-subheader" xmlns="http://www.w3.org/1999/html">
+        <div class="careplus-subheader-image">
+            <span class="careplus-dark-transparent"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Shop</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="careplus-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="{{ path ('my_app_user_homepage') }}">Homepage</a></li>
+                            <li>Shop
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--// Main Content \\-->
+<div class="careplus-main-content">
+
+    <!--// Main section \\-->
+    <div class="careplus-main-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-9">
+                    <div class="careplus-shopwrap">
+                        <figure><img src="{{ asset('img/' ~ image) }}" style="width: 360px; height: 300px"></figure>
+                        <div class="careplus-shop-detail-text">
+                            <h4>{{ libelle }}</h4>
+
+
+                            <a href ="{{  path ('Rating', {'id':id}) }}">{{ rating|rating }}</a>
+
+                            <span><p>{{ type }}.</p></span>
+                            <span>{{ prix }} DT</span>
+                            <ul class="careplus-shop-option">
+                                <li>
+                                    <span><i class="fa fa-folder-o"></i>Category:</span>
+                                    {{ categorie }}
+                                </li>
+
+                            </ul>
+                            <div class="clear-fix"></div>
+                            <button href="#" class="careplus-readmore-btn" data-toggle="modal" data-target="#id-popup">Contacter l'annonceur<span></span></button>
+                            <div class="modal fade" id="id-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title text-center" id="myModalLabel">Le numéro de l'annonceur</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-xs-12 text-center">
+                                                    {{ tel }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="careplus-shop-tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav-tabs" role="tablist">
+                            <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                        </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane" id="home">
+                            <div class="careplus-section-heading"><h2>Product Description</h2></div>
+                            <div class="careplus-description">
+                                <p> {{ description }}.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!--// Tabs \\-->
+                    <div class="careplus-section-heading"><h2>Related Products</h2></div>
+                    <div class="careplus-shop careplus-related-products">
+                        <ul class="row">
+
+                            {% for lots in Modeles  %}
+
+                            <li class="col-md-4">
+                                <figure><a href ="{{  path ('shop_AfficherDetail', {'type':lots.type, 'libelle':lots.libelle, 'prix':lots.prix, 'categorie':lots.categorie, 'description':lots.description, 'image':lots.image,} ) }}"><img src="{{ asset('img/' ~ lots.Image) }}" style="width: 270px; height: 200px"><span><i class="fa fa-link"></i><small></small></span></a></figure>
+                                <div class="careplus-related-products-text">
+                                    <h5><a href ="{{  path ('shop_AfficherDetail', {'type':lots.type, 'libelle':lots.libelle, 'prix':lots.prix, 'categorie':lots.categorie, 'description':lots.description, 'image':lots.image,} ) }}">{{ lots.Libelle }}</a></h5>
+                                    <small>{{ lots.Description }}</small>
+                                    <span>{{ lots.Prix }}</span>
+                                </div>
+                            </li>
+
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <!--// SideBaar \\-->
+                <aside class="col-md-3">
+
+                    <!--// Widget Search \\-->
+                    <div class="careplus-widget-heading"><h2>Search</h2></div>
+                    <div class="widget widget_search">
+                        <form>
+                            <input type="text" value="Search Here" onblur="if(this.value == '') { this.value ='Search Here'; }" onfocus="if(this.value =='Search Here') { this.value = ''; }">
+                            <label>
+                                <input type="submit" value="">
+                            </label>
+                        </form>
+                    </div>
+                    <!--// Widget Search \\-->
+
+                    <!--// Widget Cetagories \\-->
+                    <div class="careplus-widget-heading"><h2>Departments</h2></div>
+                    <div class="widget widget_department">
+                        <ul>
+                            <li><a href="404.html"><i class="icon-medical-3"></i></a></li>
+                            <li><a href="404.html"><i class="icon-medical-4"></i></a></li>
+                            <li><a href="404.html"><i class="icon-eye3"></i></a></li>
+                            <li><a href="404.html"><i class="icon-medical-5"></i></a></li>
+                            <li><a href="404.html"><i class="icon-medical-6"></i></a></li>
+                            <li><a href="404.html"><i class="icon-medical-3"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!--// Widget Cetagories \\-->
+
+                    <!--// Widget archive \\-->
+                    <div class="careplus-widget-heading"><h2>Our Cetagories</h2></div>
+                    <div class="widget widget_cetagories">
+                        <ul>
+                            <li><a href="404.html">Blood Donors <span>(12)</span></a></li>
+                            <li><a href="404.html">Emergency Care <span>(08)</span></a></li>
+                            <li><a href="404.html">Surgical Experts <span>(12)</span></a></li>
+                            <li><a href="404.html">General Medicine <span>(08)</span></a></li>
+                            <li><a href="404.html">Doctors Community <span>(12)</span></a></li>
+                            <li><a href="404.html">Emergency Care <span>(08)</span></a></li>
+                        </ul>
+                    </div>
+                    <!--// Widget archive \\-->
+
+
+
+
+
+
+
+                </aside>
+                <!--// SideBaar \\-->
+
+            </div>
+        </div>
+    </div>
+    <!--// Main section \\-->
+<!--//
+</div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+    <!--
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Suppression</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p>Voulez vous vraiment supprimer cette image ?</p>
+                    <p style="color: #ac2925">Cette action est irreversible!</p>
+                </div>
+
+                <div class="modal-footer">
+                    <a class="button btn-small  text-center" data-dismiss="modal">Annuler</a>
+                    <a class="button btn-small red  text-center remove_item"  >Supprimer</a>
+                </div>
+                <input id="remove" hidden>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".delete-btn").click(function(e){
+                var entityId = e.target.id;
+                $(".delete-btn").addClass('toremove');
+                $("#remove").val(entityId);
+                console.log('waaaaaaaaaa3');
+                console.log(entityId);
+            });
+            $(".remove_item").click(function () {
+
+                var entityId =   $("#remove").val();
+                console.log(entityId);
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'html',
+                    url: Routing.generate('shop_DeleteProduit',{'id':entityId}),
+                    success: function (resultat) {
+                        $(".delete-btn").removeClass('toremove');
+                        // jQuery("#div").reload();
+                        //window.location.reload();
+
+                        jQuery('#myModal').modal('hide');
+                        jQuery("#content").fadeOut(function() {
+                            jQuery("#content").empty();
+                        });
+                        jQuery("#content").fadeIn(function() {
+                            jQuery("#content").html(resultat).fadeIn();
+                        });
+
+                    }
+                });
+
+            });
+
+
+        });
+    </script>
+<!--// Main Content \\-->
+{% endblock %}

@@ -1,0 +1,16 @@
+<table border="1">
+    <tr>
+        <th>Type</th><th>Libelle</th><th>Prix</th><th>Catégorie</th><th>Description</th><th>Image</th><th>Supprimer</th><th>Update</th>
+    </tr>
+        <tr>
+            <td>{{ type }}</td>
+            <td>{{ libelle }}</td>
+            <td>{{ prix }}</td>
+            <td>{{ categorie }}</td>
+            <td>{{ description}}</td>
+            <td>{{ tel}}</td>
+            <td>{{ image }}</td>
+            <td><a href ="{{  path ('shop_DeleteProduit_Back', {'id':id} ) }}">Supprimer</a></td>
+            <td><a href ="{{  path ('shop_UpdateProduit_Back', {'id':id} ) }}">Update</a></td>
+        </tr>
+</table>

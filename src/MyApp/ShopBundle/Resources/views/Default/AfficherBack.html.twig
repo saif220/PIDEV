@@ -1,0 +1,21 @@
+<h1>Liste des Produits</h1>
+<table border="1">
+    <tr>
+        <th>Type</th><th>Libelle</th><th>Prix</th><th>Catégorie</th><th>Description</th><th>Image</th><th>Supprimer</th><th>Update</th>
+    </tr>
+    {% for lots in Modeles %}
+        <tr>
+            <td>{{ lots.Type }}</td>
+            <td>{{ lots.Libelle }}</td>
+            <td>{{ lots.Prix }}</td>
+            <td>{{ lots.Categorie }}</td>
+            <td>{{ lots.Description}}</td>
+            <td>{{ lots.tel}}</td>
+            <td>{{ lots.Image }}</td>
+            <td><a href ="{{  path ('shop_DeleteProduit_Back', {'id':lots.id} ) }}">Supprimer</a></td>
+            <td><a href ="{{  path ('shop_UpdateProduit_Back', {'id':lots.id} ) }}">Update</a></td>
+            <td><a href ="{{  path ('shop_AfficherDetail_Back', {'id':lots.id, 'type':lots.type, 'libelle':lots.libelle, 'prix':lots.prix, 'categorie':lots.categorie, 'description':lots.description,'tel':lots.tel, 'image':lots.image, 'rating':lots.rating,} ) }}">Afficher</a></td>
+
+        </tr>
+    {% endfor %}
+</table>

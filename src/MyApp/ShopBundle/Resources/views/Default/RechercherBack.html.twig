@@ -1,0 +1,26 @@
+<h3>Rechercher</h3>
+<form method="post">
+
+    <input value="" type="text" name="libelle" placeholder="what are you looking for ?">
+
+
+
+    <label> <input type="Submit" value="Search Now"> <span></span></label>
+
+</form>
+<h5>Liste des Produits </h5>
+<table border="1">
+    <tr>
+        <th>Type</th><th>Libelle</th><th>Prix</th><th>Catégorie</th><th>Déscription</th><th>Image</th>
+    </tr>
+    {% for p in prods %}
+        <tr>
+            <td>{{ p.type }}</td>
+            <td>{{ p.libelle }}</td>
+            <td>{{ p.prix }}</td>
+            <td>{{ p.categorie }}</td>
+            <td>{{ p.Description }}</td>
+            <td>{{ p.image }}</td>
+        </tr>
+    {%endfor%}
+</table>

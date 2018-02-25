@@ -44,7 +44,6 @@ Events:
 Shop:
     path:     /Shop
     defaults: { _controller: MyAppUserBundle:Default:Shop}
-
 AddDrug:
     path:     /addDrug
     defaults: { _controller: MyAppUserBundle:Admin:add}
