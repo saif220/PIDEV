@@ -273,6 +273,17 @@ class CabinetController extends Controller
 
     }
 
+    public function profilecabinetAction($userd)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery(
+            "SELECT v From MyAppDoctorBundle:Cabinet v  
+                                          WHERE v.nomDocteur= :userd")->setParameter('userd', $userd);
+        $cab = $query->getResult();
+        return $this->render('MyAppDoctorBundle:Cabinet:profilecabinet.html.twig',array("cab"=>$cab));
+    }
+
 
 
 

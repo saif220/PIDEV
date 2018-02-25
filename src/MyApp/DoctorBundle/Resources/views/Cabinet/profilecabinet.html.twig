@@ -1,0 +1,151 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+
+
+
+<div class="careplus-subheader">
+    <div class="careplus-subheader-image">
+        <span class="careplus-dark-transparent"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Contact Us</h1>
+                    <span>Aliquam in elit vel eros tincidunt pulvinar sit amet</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="careplus-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// SubHeader \\-->
+
+<!--// Main Content \\-->
+<div class="careplus-main-content careplus-content-space">
+    <!--// Main Section \\-->
+    <div class="careplus-main-section">
+        <div class="container">
+            <div class="row">
+                {% for x in cab %}
+                <div class="col-md-12">
+                    <div class="careplus-fancy-title">
+                        <h2>Get In Touch</h2>
+                        <span><small></small><i class="icon-tool5"></i></span>
+                    </div>
+                    <div class="carepluss-contact-us-info">
+                        <ul class="row">
+                            <li class="col-md-3">
+                                <div class="carepluss-info">
+                                    <h5>Call Us At</h5>
+
+                                    <p>+216 {{ x.tel }}</p>
+                                    <span><i class="fa fa-phone"></i></span>
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="carepluss-info">
+                                    <h5>Mail Us At</h5>
+                                    <p><a href="mailto:yourdomain@name.com">info@example.com</a></p>
+                                    <p><a href="mailto:yourdomain@name.com">abc@gmail.com</a></p>
+                                    <span><i class="fa fa-envelope"></i></span>
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="carepluss-info">
+                                    <h5>our Location</h5>
+                                    <p>{{ x.addresse }}
+                                    </p>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                </div>
+                            </li>
+                            <li class="col-md-3">
+                                <div class="carepluss-info">
+                                    <h5>Specialité</h5>
+                                    <p>{{ x.specialite }}</p>
+
+                                    <span><i class="fa fa-fax"></i></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// Main Section \\-->
+{% endfor %}
+    <!--// Main Section \\-->
+    <div class="careplus-main-section careplus-form-map">
+        <div class="careplus-fancy-title">
+            <h2>Contact Us At</h2><span><small></small><i class="icon-tool5"></i></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="careplus-map-form">
+                        <h4>Send Us Message</h4>
+                        <form method="post" class="myform" action="http://eyecix.com/html/careplus/process-form.php">
+                            <ul>
+                                <li><input value="Enter Your Name" onblur="if(this.value == '') { this.value ='Enter Your Name'; }" onfocus="if(this.value =='Enter Your Name') { this.value = ''; }" tabindex="0" type="text" name="name"></li>
+                                <li><input value="Enter Your Email" onblur="if(this.value == '') { this.value ='Enter Your Email'; }" onfocus="if(this.value =='Enter Your Email') { this.value = ''; }" tabindex="0" type="email" name="email"></li>
+                                <li class="message-box">
+                                    <textarea name="message" placeholder="Enter Message Here" ></textarea>
+                                </li>
+                                <li>
+                                    <label><input type="submit" name="submit" value="Send Now"><span></span></label>
+                                    <span class="output_message"></span>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <!--// Main Section \\-->
+
+</div>
+    {% block javascripts %}
+        {{ parent() }}
+        {% for x in cab %} }
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH7EvKwQ6bEZTCZX5MVirXfXTxFWa2R8c"
+                type="text/javascript"></script>
+        <script>
+            var myCenter =new google.maps.LatLng({{ x.latitude }},{{ x.longitude }});
+            var marker;
+            function initialize() {
+                var mapProp= {
+                    center: myCenter,
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map = new google.maps.Map(document.getElementById('map'),
+                    mapProp);
+                var marker = new google.maps.Marker({
+                    position: myCenter,
+                    animation: google.maps.Animation.BOUNCE
+                });
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListner(window,'load',initialize());
+            {% endfor %}
+        </script>
+
+
+        {% endblock %}
+
+
+
+{% endblock %}

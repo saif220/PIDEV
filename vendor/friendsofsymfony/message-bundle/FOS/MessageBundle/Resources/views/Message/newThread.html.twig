@@ -1,0 +1,47 @@
+{% extends 'MyAppUserBundle::layout.html.twig' %}
+{% block body %}
+    <div class="careplus-subheader">
+        <div class="careplus-subheader-image">
+            <span class="careplus-dark-transparent"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>ADD You Cabinet</h1>
+                        <span>Aliquam in elit vel eros tincidunt pulvinar sit amet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="careplus-main-content">
+
+
+    <div class="col-md-12">
+    <div class="careplus-appointment-request-form">
+{% block fos_message_content %}
+
+<h2>{% trans from 'FOSMessageBundle' %}send_newaaaa{% endtrans %}</h2>
+        <div class="careplus-appointment-request-form">
+
+<form action="{{ url('fos_message_thread_new') }}" method="post">
+    {{ form_start(form, {'attr': {'action': 'url("fos_message_thread_new")'}}) }}
+
+    <ul>
+        <li class="careplus-appointment-fullform"> <span>Nom Docteur</span> </li>
+        <li>{{ form_widget(form.recipient) }}</li>
+        <li class="careplus-appointment-fullform"> <span>Nom Docteur</span> </li>
+    <li>{{ form_widget(form.subject) }}</li>
+        <li class="careplus-appointment-fullform"> <span>Nom Docteur</span> </li>
+    <li>{{ form_widget(form.body) }}</li>
+        <li class="careplus-appointment-fullform"> <li><label><input type="submit" /><span></span></label></li>                </ul>
+    <span></span>
+{{ form_end(form) }}
+
+
+
+</form>
+        </div></div></div></div>
+{% endblock %}
+{% endblock %}

@@ -42,6 +42,10 @@ Cabinet:
     path:     /cabinet/{spec}
     defaults: { _controller: MyAppDoctorBundle:Cabinet:Cabinet}
 
+profilecabinet:
+    path:     /profilecabinet/{userd}
+    defaults: { _controller: MyAppDoctorBundle:Cabinet:profilecabinet}
+
 quiz:
     path:     /quiz
     defaults: { _controller: MyAppDoctorBundle:Cabinet:quiz}

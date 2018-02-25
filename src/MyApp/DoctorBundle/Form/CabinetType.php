@@ -3,6 +3,7 @@
 namespace MyApp\DoctorBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -18,7 +19,20 @@ class CabinetType extends AbstractType
     {
         $builder->add('nomDocteur')
             ->add('addresse')
-            ->add('specialite')
+            ->add('latitude')
+            ->add('longitude')
+            ->add('specialite',ChoiceType::class,array('choices'=>array(
+                'Generaliste'=>'Generaliste',
+                'Cardilogie'=>'Cardiologie',
+                'Dermatologie'=>'Dermatologie',
+                'Gastro-entérologie'=>'Gastro-entérologie',
+                'Gynécologie'=>'Gynécologie',
+                'Neurologie'=>'Neurologie',
+                'Ophtalmologie'=>'Ophtalmologie',
+                'Orthopédie'=>'Orthopédie',
+                'Pédiatrie'=>'Pédiatrie',
+                'Radiologie'=>'Radiologie',),
+            ))
             ->add('tel')
 
             ->add('devisFile', VichFileType::class, array(

@@ -52,7 +52,7 @@
 
 
 
-                            <figure><a href="department-detail.html" class="parent"><img src="{{ asset(vich_uploader_asset(c, 'devisFile')) }}" alt="" style="size: inherit">
+                            <figure><a href="{{ path ('profilecabinet', {'userd':c.user}) }}" class="parent"><img src="{{ asset(vich_uploader_asset(c, 'devisFile')) }}" alt="" style="size: inherit">
                                     <span><i class="fa fa-link"></i><small></small></span></a><span></span></figure>
                             <div class="careplus-department-list-text">
                                 <h5><a href="department-detail.html">{{ c.specialite }}</a></h5>
